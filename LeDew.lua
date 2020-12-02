@@ -2663,7 +2663,7 @@ return false
 end
 if text == 'اريد بوت' or text == 'اريد مطور' or text == 'خوش سورس' or text == 'سورس ديو' or text == 'اريد بوت تمبلر' or text == 'سورس ديو' then
 Text = [[
-•- DEV @LeDew1 مبرمج بوتات•
+•- DEV @EEEEZE مبرمج بوتات•
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -2673,7 +2673,7 @@ Text = [[
 اهلا عزيزي
 متوفر تنصيب بوتات ع سورس ديو
 احدث واسرع البوتات وضمان الثقه
-للاستفسار راسل المطور @LeDew1
+للاستفسار راسل المطور @EEEEZE
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -2687,9 +2687,9 @@ Text = [[
 send(msg.chat_id_, msg.id_,Text)
 return false
 end
-if text == '@LeDew1' or text == '@DewSc1' or text == 'عبدالله ' then
+if text == '@EEEEZE' or text == '@DewSc1' or text == 'عبدالله ' then
 Text = [[
-@LeDew1 هذا مطور سورس ديو
+@EEEEZE هذا مطور سورس ديو
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -7774,7 +7774,7 @@ local Text= [[
 • `#نقاطك` نقاطك
 *•●○●○●○●•ٴ*
 ارسل تغير الايدي لتغير ايدي جديد
-𝘊𝘩 - [𝘯𝘪𝘨𝘨𝘢 𝘪𝘋](t.me/NIGGA_ID)•
+𝘊𝘩 - [ 𝐷𝐸𝑊 𝐼𝐷 ](t.me/DewSc_id)•
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false  
