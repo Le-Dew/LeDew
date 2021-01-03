@@ -4270,7 +4270,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 -----------------------------------------------------
-if text == ("تاك للاغبياء") and Mod(msg) then
+if text == ("تاق للاغبياء") and Mod(msg) then
 local list = database:smembers(bot_id..'Athol:User'..msg.chat_id_)
 t = "\n•ياأغبياء تعالو يبونكم 😹😭💞 . \n•━━━━•━━━━•\n"
 for k,v in pairs(list) do
@@ -4390,7 +4390,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 -----------------------------------------------------
-if text == ("تاك للجلاب") and Mod(msg) then
+if text == ("تاق للجلاب") and Mod(msg) then
 local list = database:smembers(bot_id..'Glb:User'..msg.chat_id_)
 t = "\n•ياجلاب تعالو يردونكم 😹😭💞 . \n•━━━━•━━━━•\n"
 for k,v in pairs(list) do
@@ -4570,7 +4570,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 -----------------------------------------------------
-if text == ("تاك للي بقلبي") and Mod(msg) then
+if text == ("تاق للقلوب ") and Mod(msg) then
 local list = database:smembers(bot_id..'Galby:User'..msg.chat_id_)
 t = "\n•يالي بقلبي تعالو يبونكم 😹😭💞 . \n•━━━━•━━━━•\n"
 for k,v in pairs(list) do
@@ -4630,7 +4630,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 -----------------------------------------------------
-if text == ("تاك للتوج") and Mod(msg) then
+if text == ("تاق للتوج") and Mod(msg) then
 local list = database:smembers(bot_id..'Tag:User'..msg.chat_id_)
 t = "\n•ياتوج تعالو يردونكم 😹😭💞 . \n•━━━━•━━━━•\n"
 for k,v in pairs(list) do
@@ -4922,7 +4922,7 @@ t = "• لا يوجد منشئين"
 end
 send(msg.chat_id_, msg.id_, t)
 end
-if text == ("تاك جميع الرتب") and BasicConstructor(msg) then
+if text == ("تاق جميع الرتب") and BasicConstructor(msg) then
 local list = database:smembers(bot_id..'Constructor'..msg.chat_id_)
 t = "\n• قائمة المنشئين \n*•●○●○●○●•ٴ*\n"
 for k,v in pairs(list) do
@@ -5309,7 +5309,7 @@ t = "• لا يوجد ادمنيه"
 end
 send(msg.chat_id_, msg.id_, t)
 end
-if text == ("تاك الادمنيه") then
+if text == ("تاق الادمنيه") then
 local list = database:smembers(bot_id..'Mod:User'..msg.chat_id_)
 t = "\n• قائمة االادمنيه \n *•●○●○●○●•ٴ*\n"
 for k,v in pairs(list) do
@@ -5324,7 +5324,7 @@ t = "• لا يوجد ادمنيه"
 end
 send(msg.chat_id_, msg.id_, t)
 end
-if text == ("تاك جميع الرتب") then
+if text == ("تاق جميع الرتب") then
 local list = database:smembers(bot_id..'Mod:User'..msg.chat_id_)
 t = "\n• قائمة االادمنيه \n *•●○●○●○●•ٴ*\n"
 for k,v in pairs(list) do
@@ -8543,7 +8543,7 @@ sebd(msg.chat_id_,msg.id_,'• تم تغيير اسم المجموعه الى {[
 end
 end,nil) 
 end
-if text == ("تاك جميع الرتب") and Mod(msg) then
+if text == ("تاق جميع الرتب") and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -8568,7 +8568,7 @@ end
 send(msg.chat_id_,msg.id_,t)
 end,nil)
 end
-if text == ("تاك للكل") and Mod(msg) then
+if text == ("تاق للكل ") and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -8578,7 +8578,7 @@ send(msg.chat_id_, msg.id_,'•  𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝒏𝒊𝒈𝒈�
 end
 return false
 end
-if database:get(bot_id.."chat:tagall"..msg.chat_id_) then  return send(msg.chat_id_, msg.id_,"يمكنك عمل تاك للكل كل *10 دقائق* فقط") end
+if database:get(bot_id.."chat:tagall"..msg.chat_id_) then  return send(msg.chat_id_, msg.id_,"يمكنك عمل تاق للكل كل *10 دقائق* فقط") end
 database:setex(bot_id..'chat:tagall'..msg.chat_id_,600,true)
 tdcli_function({ID="GetChannelFull",channel_id_ = msg.chat_id_:gsub('-100','')},function(argg,dataa) 
 tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub('-100',''), offset_ = 0,limit_ = dataa.member_count_
@@ -8629,14 +8629,14 @@ if data.username_ then
 t = t.."*︙"..x.."︙>* {[@"..data.username_.."]} \n"
 end
 if k == 0 then
-t = t.."*يمكنك عمل تاك  + العدد مثال تاك ل 5*"
+t = t.."*يمكنك عمل تاق  + العدد مثال تاق ل 5*"
 send(msg.chat_id_,msg.id_,t)
 end
 end,nil)
 end
 end,nil)
 end
-if text and text:match("^تاك ل (%d+)$") and Mod(msg) then
+if text and text:match("^تاق ل (%d+)$") and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -8646,7 +8646,7 @@ send(msg.chat_id_, msg.id_,'•  𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝒏𝒊𝒈𝒈�
 end
 return false
 end
-taglimit = text:match("^تاك ل (%d+)$"):gsub('تاك ل ','')
+taglimit = text:match("^تاق ل (%d+)$"):gsub('تاق ل ','')
 tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub('-100',''), offset_ = 0,limit_ = taglimit
 },function(ta,LeDew)
 local t = "\n*• قائمة الاعضاء \n *•●○●○●○●•ٴ*\n*"
@@ -10927,7 +10927,7 @@ local Teext =[[
 *•●○●○●○●•ٴ*
 *•استعاده الاوامر*
 *•الادمنيه*
-*•تاك الادمنيه*
+*•تاق الادمنيه*
 *•تغير الايدي*
 *•تعين الايدي*
 *•مسح + العدد*
