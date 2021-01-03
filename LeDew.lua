@@ -1473,7 +1473,12 @@ else
 t = '\n• نورت حبي \n•  name \n• user' 
 end 
 t = t:gsub('name',result.first_name_) 
-t = t:gsub('user',('@'..result.username_ or 'لا يوجد')) 
+if result.username_ then 
+welcomeuser = '[@'..result.username_..']'
+else
+welcomeuser = '< لا يوجد معرف >'
+end
+t = t:gsub('user',welcomeuser) 
 send(msg.chat_id_, msg.id_,t)
 end,nil) 
 end 
@@ -8569,32 +8574,46 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'•  𝑾𝒆𝒍𝒄𝒐𝒎𝒆 Dew •\n• لايمكنك استخدام البوت •\n• عليك الاشتراك في القناة •\n• اشترك اولا ['..database:get(bot_id..'add:ch:username')..'•]')
+send(msg.chat_id_, msg.id_,'•  𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝒏𝒊𝒈𝒈𝒂 •\n• لايمكنك استخدام البوت •\n• عليك الاشتراك في القناة •\n• اشترك اولا ['..database:get(bot_id..'add:ch:username')..'•]')
 end
 return false
 end
-tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub('-100',''), offset_ = 0,limit_ = 200
+if database:get(bot_id.."chat:tagall"..msg.chat_id_) then  return send(msg.chat_id_, msg.id_,"يمكنك عمل تاك للكل كل *10 دقائق* فقط") end
+database:setex(bot_id..'chat:tagall'..msg.chat_id_,600,true)
+tdcli_function({ID="GetChannelFull",channel_id_ = msg.chat_id_:gsub('-100','')},function(argg,dataa) 
+tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub('-100',''), offset_ = 0,limit_ = dataa.member_count_
 },function(ta,LeDew)
-local t = "\n*• قائمة الاعضاء \n *•●○●○●○●•ٴ*\n*"
 x = 0
+tags = 0
 local list = LeDew.members_
 for k, v in pairs(list) do
+tdcli_function({ID="GetUser",user_id_ = v.user_id_},function(arg,data)
+if x == 5 or x == tags or k == 0 then
+tags = x + 5
+t = "#all"
+end
 x = x + 1
-if database:get(bot_id..'user:Name'..v.user_id_) then
-t = t.."*︙"..x.."︙ >  {@"..database:get(bot_id..'user:Name'..v.user_id_).."}\n*"
-else
+tagname = data.first_name_
+tagname = tagname:gsub("]","")
+tagname = tagname:gsub("[[]","")
+t = t..", ["..tagname.."](tg://user?id="..v.user_id_..")"
+if x == 5 or x == tags or k == 0 then
+local Text = t:gsub('#all,','#all\n')
+sendText(msg.chat_id_,Text,msg.id_/2097152/0.5,'md')
 end
-end
-send(msg.chat_id_,msg.id_,t)
 end,nil)
 end
+end,nil)
+end,nil)
+end
+
 if text == ("تاك") and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'•  𝑾𝒆𝒍𝒄𝒐𝒎𝒆 Dew •\n• لايمكنك استخدام البوت •\n• عليك الاشتراك في القناة •\n• اشترك اولا ['..database:get(bot_id..'add:ch:username')..'•]')
+send(msg.chat_id_, msg.id_,'•  𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝒏𝒊𝒈𝒈𝒂 •\n• لايمكنك استخدام البوت •\n• عليك الاشتراك في القناة •\n• اشترك اولا ['..database:get(bot_id..'add:ch:username')..'•]')
 end
 return false
 end
@@ -8604,13 +8623,51 @@ local t = "\n*• قائمة الاعضاء \n *•●○●○●○●•ٴ*\n
 x = 0
 local list = LeDew.members_
 for k, v in pairs(list) do
+tdcli_function({ID="GetUser",user_id_ = v.user_id_},function(arg,data)
 x = x + 1
-if database:get(bot_id..'user:Name'..v.user_id_) then
-t = t.."*︙"..x.."︙ >  {@"..database:get(bot_id..'user:Name'..v.user_id_).."}\n*"
-else
+if data.username_ then
+t = t.."*︙"..x.."︙>* {[@"..data.username_.."]} \n"
 end
-end
+if k == 0 then
+t = t.."*يمكنك عمل تاك  + العدد مثال تاك ل 5*"
 send(msg.chat_id_,msg.id_,t)
+end
+end,nil)
+end
+end,nil)
+end
+if text and text:match("^تاك ل (%d+)$") and Mod(msg) then
+if AddChannel(msg.sender_user_id_) == false then
+local textchuser = database:get(bot_id..'text:ch:user')
+if textchuser then
+send(msg.chat_id_, msg.id_,'['..textchuser..']')
+else
+send(msg.chat_id_, msg.id_,'•  𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝒏𝒊𝒈𝒈𝒂 •\n• لايمكنك استخدام البوت •\n• عليك الاشتراك في القناة •\n• اشترك اولا ['..database:get(bot_id..'add:ch:username')..'•]')
+end
+return false
+end
+taglimit = text:match("^تاك ل (%d+)$"):gsub('تاك ل ','')
+tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub('-100',''), offset_ = 0,limit_ = taglimit
+},function(ta,LeDew)
+local t = "\n*• قائمة الاعضاء \n *•●○●○●○●•ٴ*\n*"
+x = 0
+local list = LeDew.members_
+for k, v in pairs(list) do
+tdcli_function({ID="GetUser",user_id_ = v.user_id_},function(arg,data)
+x = x + 1
+if data.username_ then
+t = t.."*︙"..x.."︙l>* {[@"..data.username_.."]} \n"
+else
+tagname = data.first_name_
+tagname = tagname:gsub("]","")
+tagname = tagname:gsub("[[]","")
+t = t.."*︙"..x.."︙l>* {["..tagname.."](tg://user?id="..v.user_id_..")} \n"
+end
+if k == 0 then
+send(msg.chat_id_,msg.id_,t)
+end
+end,nil)
+end
 end,nil)
 end
 if text == ("تنزيل الكل") and msg.reply_to_message_id_ ~= 0 and Manager(msg) then
@@ -9949,11 +10006,7 @@ send(msg.chat_id_,msg.id_,'\n• اهلا عزيزي البوت هنا مشرف'
 end
 end
 end
-if text and text:match("^قول (.*)$") then
-if not Special(msg) then
-send(msg.chat_id_, msg.id_,' عضو و يتأمر براسي') 
-return false
-end
+if text:match("^قول (.*)$") then
 local txt = {string.match(text, "^(قول) (.*)$")}
 send(msg.chat_id_, 0, txt[2], "md")
 local id = msg.id_
