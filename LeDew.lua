@@ -269,7 +269,7 @@ var = database:get(bot_id.."Mottte:Rd"..msg.chat_id_) or 'لوف'
 elseif database:sismember(bot_id..'Motttte:User'..chat_id, user_id) then  
 var = database:get(bot_id.."Motttte:Rd"..msg.chat_id_) or 'غبي' 
 else
-var = database:get(bot_id.."Memp:Rd"..msg.chat_id_) or 'عضو'
+var = database:get(bot_id.."Memp:Rd"..msg.chat_id_) or 'العضو'
 end  
 return var
 end 
@@ -429,31 +429,31 @@ end
 function Total_Msg(msgs)  
 local LeDew_Msg = ''  
 if msgs > 100 then 
-LeDew_Msg = 'تفاعلك تعبان ياتعبان' 
+LeDew_Msg = 'تفاعلك زفت' 
 elseif msgs > 200 then 
-LeDew_Msg = 'شد شوي ' 
+LeDew_Msg = 'شويه شدها' 
 elseif msgs > 300 then 
 LeDew_Msg = 'شبه متفاعل ' 
 elseif msgs > 600 then 
-LeDew_Msg = 'اسطوره التفاعل😍 ' 
+LeDew_Msg = 'عود متفاعل' 
 elseif msgs > 1000 then 
-LeDew_Msg = 'متفاعل ' 
+LeDew_Msg = 'متفاعل كفو' 
 elseif msgs > 1500 then 
 LeDew_Msg = 'متفاعل جدا' 
 elseif msgs > 2000 then 
-LeDew_Msg = 'ملك التفاعل🔥  '  
+LeDew_Msg = 'طاك مال تفاعل'  
 elseif msgs > 4000 then 
-LeDew_Msg = 'مستوى مستوى ' 
+LeDew_Msg = 'مخبل بلتفاعل' 
 elseif msgs > 4500 then 
-LeDew_Msg = 'يعجز اللسان عن وصفك ' 
+LeDew_Msg = 'مدمن تفاعل' 
 elseif msgs > 5500 then 
-LeDew_Msg = 'اسطورتي وربي😍' 
+LeDew_Msg = 'طاك' 
 elseif msgs > 7000 then 
-LeDew_Msg = 'ملك وربي ملك ' 
+LeDew_Msg = 'يطك بالكاع' 
 elseif msgs > 9500 then 
-LeDew_Msg = 'ياعيني عليك ' 
+LeDew_Msg = 'دك تفاعل' 
 elseif msgs > 10000000000 then 
-LeDew_Msg = 'مستوى مستوى '
+LeDew_Msg = 'ملك التفاعل'
 end 
 return LeDew_Msg 
 end
@@ -765,7 +765,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..'•]')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..'•]')
 end
 return false
 end
@@ -976,7 +976,7 @@ send(msg.chat_id_, msg.id_,'اصدار سورس ديو الاول 1')
 end
 if text == '•معلومات الكيبورد•' and SudoBot(msg) then 
 database:del(bot_id..'Sart:Bot') 
-send(msg.chat_id_, msg.id_,'- اهلا عزيزى مطور اساسي \n- معلومات كتالي↓\n1• الاحصائيات { لعرض عدد القروب، والمشتركين في البوت }\n2• تفعيل التواصل{ لتفعيل التواصلعبر البوت خاص بك}\n3• تعطيل التواصل{ لتعطيل التواصلعبر البوت خاص بك }\n4• قائمه العام { لعرض المحظورين عام في البوت }\n5• المطورين { لعرض المطورين في بوتك } \n6• ضع اسم للبوت { لختيار اسم لبوت خاص بك }\n7• حذف كليشه ستارت { حذف كليشه عندما يضغط العضو علي كلمه /start }\n8• ضع كليشه ستارت { لختيار كلايشه /start حديده }\n9• اذاعه { ارسال رساله لجميع القروب في بوتك }\n10• اذاعه خاص { ارسال رساله لجميع مشتركين بوتك!}\n11• تعطيل الاشتراك الاجباري { لتعطيل الاشتراك جباري خاص بوتك}\n12• تفعيل الاشتراك الاجباري { لتفعيل الاشتراك الاجباري بوتك }\n13•اذاعه بالتوجيه { ارسال رساله بالتوجيه الي جميع القروب }\n14• اذاعه بالتوجيه خاص { ارسال رساله بالتوجيه الي جميع المشتركين }\n15• حذف رساله الاشتراك { لحذف رساله الاشتراك التي اضفتها }\n16• تغير رساله الاشتراك { لتغير رساله الاشتراك خاصه بوتك وتختار غيرها }\n17• تغير الاشتراك{لتغير •الاشتراك الاجباري• خاص بوتك واضافت قناة غيرها }\n18• تفعيل الاشتراكالاول { لتفعيل الاشتراكجباري عندما تفعيل البوت اول مَـرّھٌ }\n19• الاشتراك الاجباري { لظهار القناة مفعل الاشتراك عليها }\n20• تفعيل البوت الخدمي { يمكن هاذا امر ان منشئ القروب يفعل البوت م̷ـــِْن دون حتياجه لمطور البوت\n21• تعطيل البوت الخدمي { يمك هل خاصيه ان تفعيل البوت اله مطورين البوت فقط }\n22• تنظيف المشتركين { يمكنك ازاله المشتركين الوهمين عبر هل امر }\n23• تنظيف القروب { يمكن ازاله المجموعات الوهميه عبر عل امر }\n24• جلب نسخه احتياطيه { لعرض ملف المجموعات بوتك }\n25• تحديث السورس { لتحديث السورس خاص بوتك }\n26• الغاء { للغاء الامر الذي طلبته }\n===ء====================\n- اوامر كيبورد المطور اساسي معا شرح\n- قناة السورس [ضغط هنا](t.me/DewSc1)') 
+send(msg.chat_id_, msg.id_,'- اهلا عزيزى مطور اساسي \n- معلومات كتالي↓\n1• الاحصائيات { لعرض عدد القروب، والمشتركين في البوت }\n2• تفعيل التواصل{ لتفعيل التواصلعبر البوت خاص بك}\n3• تعطيل التواصل{ لتعطيل التواصلعبر البوت خاص بك }\n4• قائمه العام { لعرض المحظورين عام في البوت }\n5• المطورين { لعرض المطورين في بوتك } \n6• ضع اسم للبوت { لختيار اسم لبوت خاص بك }\n7• حذف كليشه ستارت { حذف كليشه عندما يضغط العضو علي كلمه /start }\n8• ضع كليشه ستارت { لختيار كلايشه /start حديده }\n9• اذاعه { ارسال رساله لجميع القروب في بوتك }\n10• اذاعه خاص { ارسال رساله لجميع مشتركين بوتك!}\n11• تعطيل الاشتراك الاجباري { لتعطيل الاشتراك جباري خاص بوتك}\n12• تفعيل الاشتراك الاجباري { لتفعيل الاشتراك الاجباري بوتك }\n13•اذاعه بالتوجيه { ارسال رساله بالتوجيه الي جميع القروب }\n14• اذاعه بالتوجيه خاص { ارسال رساله بالتوجيه الي جميع المشتركين }\n15• حذف رساله الاشتراك { لحذف رساله الاشتراك التي اضفتها }\n16• تغير رساله الاشتراك { لتغير رساله الاشتراك خاصه بوتك وتختار غيرها }\n17• تغير الاشتراك{لتغير •الاشتراك الاجباري• خاص بوتك واضافت قناة غيرها }\n18• تفعيل الاشتراكالاول { لتفعيل الاشتراكجباري عندما تفعيل البوت اول مَـرّھٌ }\n19• الاشتراك الاجباري { لظهار القناة مفعل الاشتراك عليها }\n20• تفعيل البوت الخدمي { يمكن هاذا امر ان منشئ القروب يفعل البوت م̷ـــِْن دون حتياجه لمطور البوت\n21• تعطيل البوت الخدمي { يمك هل خاصيه ان تفعيل البوت اله مطورين البوت فقط }\n22• تنظيف المشتركين { يمكنك ازاله المشتركين الوهمين عبر هل امر }\n23• تنظيف القروب { يمكن ازاله المجموعات الوهميه عبر عل امر }\n24• جلب نسخه احتياطيه { لعرض ملف المجموعات بوتك }\n25• تحديث السورس { لتحديث السورس خاص بوتك }\n26• الغاء { للغاء الامر الذي طلبته }\n===ء====================\n- اوامر كيبورت المطور اساسي معا شرح\n- قناة السورس [ضغط هنا](t.me/DewSc1)') 
 end
 if text == "•ضع اسم للبوت•" and SudoBot(msg) then  
 database:setex(bot_id..'Set:Name:Bot'..msg.sender_user_id_,300,true) 
@@ -1101,7 +1101,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•قناة الاشتراك ] '..database:get(bot_id..'add:ch:username')..'•]')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•قناة الاشتراك ] '..database:get(bot_id..'add:ch:username')..'•]')
 end
 return false
 end
@@ -1194,7 +1194,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -1223,7 +1223,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -1247,7 +1247,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -1272,7 +1272,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• لا تستطيع استخدام البوت يرجى الاشتراك في القناة حتى تتمكن من استخدام الاوامر \n • <  ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• لا تستطيع استخدام البوت يرجى الاشتراك في القناة حتى تتمكن من استخدام الاوامر \n • < جط ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -2238,7 +2238,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -2251,7 +2251,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -2707,7 +2707,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -2728,7 +2728,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -2766,7 +2766,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -2781,7 +2781,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -3115,30 +3115,30 @@ tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,dat
 send(msg.chat_id_, msg.id_,'*• الرتبه >* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'DewSc1')..')\n*• الاسم >* ['..utf8.sub(data.first_name_,0,15)..'](T.ME/'..(data.username_ or 'DewSc1')..') \n*تم فتح المعرفات*\n')  
 end,nil)   
 end
-if text == 'قفل التاك' and Mod(msg) and msg.reply_to_message_id_ == 0 then 
+if text == 'قفل التاق' and Mod(msg) and msg.reply_to_message_id_ == 0 then 
 database:set(bot_id.."lock:hashtak"..msg.chat_id_,'del')  
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
-send(msg.chat_id_, msg.id_,'*• الرتبه >* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'DewSc1')..')\n*• الاسم >* ['..utf8.sub(data.first_name_,0,15)..'](T.ME/'..(data.username_ or 'DewSc1')..') \n*تم قفـل التاك*\n')  
+send(msg.chat_id_, msg.id_,'*• الرتبه >* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'DewSc1')..')\n*• الاسم >* ['..utf8.sub(data.first_name_,0,15)..'](T.ME/'..(data.username_ or 'DewSc1')..') \n*تم قفـل التاق*\n')  
 end,nil)   
-elseif text == 'قفل التاك بالتقيد' and Mod(msg) and msg.reply_to_message_id_ == 0 then 
+elseif text == 'قفل التاق بالتقيد' and Mod(msg) and msg.reply_to_message_id_ == 0 then 
 database:set(bot_id.."lock:hashtak"..msg.chat_id_,'ked')  
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
-send(msg.chat_id_, msg.id_,'*• الرتبه >* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'DewSc1')..')\n*• الاسم >* ['..utf8.sub(data.first_name_,0,15)..'](T.ME/'..(data.username_ or 'DewSc1')..') \n*تم قفـل التاك بالتقيد*\n')  
+send(msg.chat_id_, msg.id_,'*• الرتبه >* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'DewSc1')..')\n*• الاسم >* ['..utf8.sub(data.first_name_,0,15)..'](T.ME/'..(data.username_ or 'DewSc1')..') \n*تم قفـل التاق بالتقيد*\n')  
 end,nil)   
-elseif text == 'قفل التاك بالكتم' and Mod(msg) and msg.reply_to_message_id_ == 0 then 
+elseif text == 'قفل التاق بالكتم' and Mod(msg) and msg.reply_to_message_id_ == 0 then 
 database:set(bot_id.."lock:hashtak"..msg.chat_id_,'ktm')  
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
-send(msg.chat_id_, msg.id_,'*• الرتبه >* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'DewSc1')..')\n*• الاسم >* ['..utf8.sub(data.first_name_,0,15)..'](T.ME/'..(data.username_ or 'DewSc1')..') \n*تم قفـل التاك بالكتم*\n•*الحاله >الكتم*')  
+send(msg.chat_id_, msg.id_,'*• الرتبه >* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'DewSc1')..')\n*• الاسم >* ['..utf8.sub(data.first_name_,0,15)..'](T.ME/'..(data.username_ or 'DewSc1')..') \n*تم قفـل التاق بالكتم*\n•*الحاله >الكتم*')  
 end,nil)   
-elseif text == 'قفل التاك بالطرد' and Mod(msg) and msg.reply_to_message_id_ == 0 then 
+elseif text == 'قفل التاق بالطرد' and Mod(msg) and msg.reply_to_message_id_ == 0 then 
 database:set(bot_id.."lock:hashtak"..msg.chat_id_,'kick')  
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
-send(msg.chat_id_, msg.id_,'*• الرتبه >* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'DewSc1')..')\n*• الاسم >* ['..utf8.sub(data.first_name_,0,15)..'](T.ME/'..(data.username_ or 'DewSc1')..') \n*تم قفـل التاك بالطرد\n•*الحاله >الطرد*')  
+send(msg.chat_id_, msg.id_,'*• الرتبه >* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'DewSc1')..')\n*• الاسم >* ['..utf8.sub(data.first_name_,0,15)..'](T.ME/'..(data.username_ or 'DewSc1')..') \n*تم قفـل التاق بالطرد\n•*الحاله >الطرد*')  
 end,nil)   
-elseif text == 'فتح التاك' and Mod(msg) and msg.reply_to_message_id_ == 0 then 
+elseif text == 'فتح التاق' and Mod(msg) and msg.reply_to_message_id_ == 0 then 
 database:del(bot_id.."lock:hashtak"..msg.chat_id_)  
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
-send(msg.chat_id_, msg.id_,'*• الرتبه >* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'DewSc1')..')\n*• الاسم >* ['..utf8.sub(data.first_name_,0,15)..'](T.ME/'..(data.username_ or 'DewSc1')..') \n*تم فتح التاك*\n')  
+send(msg.chat_id_, msg.id_,'*• الرتبه >* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'DewSc1')..')\n*• الاسم >* ['..utf8.sub(data.first_name_,0,15)..'](T.ME/'..(data.username_ or 'DewSc1')..') \n*تم فتح التاق*\n')  
 end,nil)   
 end
 if text == 'قفل الشارحه' and Mod(msg) and msg.reply_to_message_id_ == 0 then 
@@ -3599,7 +3599,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -3635,7 +3635,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -3676,7 +3676,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -3711,7 +3711,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -3742,7 +3742,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -3779,7 +3779,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -3811,7 +3811,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -3834,7 +3834,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -3860,7 +3860,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -3906,7 +3906,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -3927,7 +3927,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -3956,7 +3956,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -3979,7 +3979,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -4001,7 +4001,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -4026,7 +4026,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -4071,7 +4071,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -4092,7 +4092,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -4210,7 +4210,7 @@ return false
 end
 ------------------------------------------------------------------------
 
-if text == ("تاك للمطايه") and Mod(msg) then
+if text == ("تاق للمطايه") and Mod(msg) then
 local list = database:smembers(bot_id..'Mote:User'..msg.chat_id_)
 t = "\n•يمطاية تعالو يبونكم 😹😭💞 . \n•━━━━•━━━━•\n"
 for k,v in pairs(list) do
@@ -4330,7 +4330,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 -----------------------------------------------------
-if text == ("تاك للقمر") and Mod(msg) then
+if text == ("تاق للقمر") and Mod(msg) then
 local list = database:smembers(bot_id..'Naby:User'..msg.chat_id_)
 t = "\n•يا قمر تعالو يبونكم 😹😭💞 . \n•━━━━•━━━━•\n"
 for k,v in pairs(list) do
@@ -4374,7 +4374,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'🔖| لا تستطيع استخدام البوت يرجى الاشتراك في القناة حتى تتمكن من استخدام الاوامر \n 📌| <  ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'🔖| لا تستطيع استخدام البوت يرجى الاشتراك في القناة حتى تتمكن من استخدام الاوامر \n 📌| < جط ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -4450,7 +4450,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 -----------------------------------------------------
-if text == ("تاك للخرفان ") and Mod(msg) then
+if text == ("تاق للخرفان ") and Mod(msg) then
 local list = database:smembers(bot_id..'Zgal:User'..msg.chat_id_)
 t = "\n•ياخرفان تعالو يردونكم 😹😭💞 . \n•━━━━•━━━━•\n"
 for k,v in pairs(list) do
@@ -4510,7 +4510,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 -----------------------------------------------------
-if text == ("تاك للنصابين ") and Mod(msg) then
+if text == ("تاق للنصابين ") and Mod(msg) then
 local list = database:smembers(bot_id..'Zahf:User'..msg.chat_id_)
 t = "\n•يانصابين تعالو يبونكم 😹😭💞 . \n•━━━━•━━━━•\n"
 for k,v in pairs(list) do
@@ -4614,7 +4614,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'🔖| لا تستطيع استخدام البوت يرجى الاشتراك في القناة حتى تتمكن من استخدام الاوامر \n 📌| <  ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'🔖| لا تستطيع استخدام البوت يرجى الاشتراك في القناة حتى تتمكن من استخدام الاوامر \n 📌| < جط ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -6117,7 +6117,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• لا تستطيع استخدام البوت يرجى الاشتراك في القناة حتى تتمكن من استخدام الاوامر \n • <  ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• لا تستطيع استخدام البوت يرجى الاشتراك في القناة حتى تتمكن من استخدام الاوامر \n • < جط ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -6286,7 +6286,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• لا تستطيع استخدام البوت يرجى الاشتراك في القناة حتى تتمكن من استخدام الاوامر \n • <  ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• لا تستطيع استخدام البوت يرجى الاشتراك في القناة حتى تتمكن من استخدام الاوامر \n • < جط ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -6357,8 +6357,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• لا تستطيع استخدام البوت يرجى الاشتراك في القناة حتى تتمكن من استخدام الاوامر \n • < 
- ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• لا تستطيع استخدام البوت يرجى الاشتراك في القناة حتى تتمكن من استخدام الاوامر \n • < جط ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -7313,7 +7312,7 @@ local text =
 '\n *•●○●○●○●•ٴ*'..
 '\n •  الروابط > { '..lock_links..
 ' }\n'..'• المعرفات > { '..lock_user..
-' }\n'..'• التاك > { '..lock_hash..
+' }\n'..'• التاق > { '..lock_hash..
 ' }\n'..'• البوتات > { '..lock_bots..
 ' }\n'..'•التوجيه > { '..lock_fwd..
 ' }\n'..'•التثبيت > { '..lock_pin..
@@ -7767,7 +7766,7 @@ return false
 end
 database:setex(bot_id.."CHENG:ID"..msg.chat_id_..""..msg.sender_user_id_,240,true)  
 local Text= [[
-> Dew
+> NIGGA
 •يمكنك اضافة
 • `#تعليق` تعليق الصوره
 • `#يوزرك`   اسم المستخدم
@@ -8677,7 +8676,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'•لا تستطيع استخدام البوت \n •يرجى الاشتراك بالقناه اولا \n •<  ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'•لا تستطيع استخدام البوت \n •يرجى الاشتراك بالقناه اولا \n •< جط ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -9345,7 +9344,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'•لا تستطيع استخدام البوت \n •يرجى الاشتراك بالقناه اولا \n •<  ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'•لا تستطيع استخدام البوت \n •يرجى الاشتراك بالقناه اولا \n •< جط ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -9625,7 +9624,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'•لا تستطيع استخدام البوت \n •يرجى الاشتراك بالقناه اولا \n •<  ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'•لا تستطيع استخدام البوت \n •يرجى الاشتراك بالقناه اولا \n •< جط ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -9656,14 +9655,14 @@ local photps = (taha.total_count_ or 0)
 local interaction = Total_Msg(Msguser)
 local rtpg = rtpa
 local tahaa = {
-" منور يلبى",
-"  فديت المتفاعل😍🔥",
-"  منور ياحلو",
-"  احبك",
-"  يالبيه ",
-"  فديت الصوره وراعيها💙😍 ",
+" مو بشر حلغوم",
+"  فديت الصاك محح",
+"  فـدشـي عمـي",
+"  دغـيرهـا شبـي هـاذ",
+"  شهل الگيمر ",
+"  شهل الصوره تخمبش ",
 "  فديت الحلو ",
-"  ياقوي انت ",
+"  بـبكن حـلك ",
 }
 local rdphoto = tahaa[math.random(#tahaa)]
 if not database:get(bot_id..'Bot:Id:Photo'..msg.chat_id_) then      
@@ -9699,12 +9698,12 @@ else
 username = 'لا يوجد '
 end
 if result.status_.ID == "UserStatusRecently" and result.profile_photo_ ~= false then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, taha.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n • ايديك - '..msg.sender_user_id_..'\n • معرفك - '..username..'\n • رتبتك - '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n • موقعك - '..rtpa..'\n • تفاعلك - '..Total_Msg(Msguser)..'\n • رسائلك - '..Msguser..'\n • نسبه تفاعلك - '..string.sub(nspatfa, 1,5)..' %\n • السحكات - '..edit..'\n • نقاطك - '..NUMPGAME..'\n')
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, taha.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'💕\n • ايديك - '..msg.sender_user_id_..'💕\n • معرفك - '..username..'💕\n • رتبتك - '..Rutba(msg.sender_user_id_,msg.chat_id_)..'💕\n • موقعك - '..rtpa..'💕\n • تفاعلك - '..Total_Msg(Msguser)..'💕\n • رسائلك - '..Msguser..'💕\n • نسبه تفاعلك - '..string.sub(nspatfa, 1,5)..' %💕\n • السحكات - '..edit..'💕\n • نقاطك - '..NUMPGAME..'💕\n')
 else 
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
-send(msg.chat_id_, msg.id_,'[\n • ايديك - '..msg.sender_user_id_..'\n • معرفك - '..username..'\n • رتبتك - '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n • موقعك - '..rtpa..'\n • تفاعلك - '..Total_Msg(Msguser)..'\n • رسائلك - '..Msguser..'\n • نسبه  تفاعلك - '..string.sub(nspatfa, 1,5)..' %\n • السحكات - '..edit..'\n • نقاطك - '..NUMPGAME..']\n')
+send(msg.chat_id_, msg.id_,'[\n • ايديك - '..msg.sender_user_id_..'💕\n • معرفك - '..username..'💕\n • رتبتك - '..Rutba(msg.sender_user_id_,msg.chat_id_)..'💕\n • موقعك - '..rtpa..'💕\n • تفاعلك - '..Total_Msg(Msguser)..'💕\n • رسائلك - '..Msguser..'💕\n • نسبه  تفاعلك - '..string.sub(nspatfa, 1,5)..' %💕\n • السحكات - '..edit..'💕\n • نقاطك - '..NUMPGAME..']💕\n')
 else
-send(msg.chat_id_, msg.id_, '\n • الصوره - ليس لديك صور في حسابك'..'[\n • ايديك - '..msg.sender_user_id_..'\n • معرفك - '..username..'\n • رتبتك - '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n • موقعك - '..rtpa..'\n • تفاعلك - '..Total_Msg(Msguser)..'\n • رسائلك - '..Msguser..'\n • نسبه تفاعلك - '..string.sub(nspatfa, 1,5)..' %\n • السحكات - '..edit..'\n • نقاطك - '..NUMPGAME..']\n')
+send(msg.chat_id_, msg.id_, '\n • الصوره - ليس لديك صور في حسابك'..'[\n • ايديك - '..msg.sender_user_id_..'💕\n • معرفك - '..username..'💕\n • رتبتك - '..Rutba(msg.sender_user_id_,msg.chat_id_)..'💕\n • موقعك - '..rtpa..'💕\n • تفاعلك - '..Total_Msg(Msguser)..'💕\n • رسائلك - '..Msguser..'💕\n • نسبه تفاعلك - '..string.sub(nspatfa, 1,5)..' %💕\n • السحكات - '..edit..'💕\n • نقاطك - '..NUMPGAME..']💕\n')
 end 
 end
 end
@@ -9722,7 +9721,7 @@ get_id_text = get_id_text:gsub('#نقاطك',NUMPGAME)
 get_id_text = get_id_text:gsub('#صورك',photps) 
 send(msg.chat_id_, msg.id_,'['..get_id_text..']')   
 else
-send(msg.chat_id_, msg.id_,'[\n • ايديك - '..msg.sender_user_id_..'\n • معرفك - '..username..'\n • رتبتك - '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n • موقعك - '..rtpa..'\n • تفاعلك - '..Total_Msg(Msguser)..'\n • رسائلك - '..Msguser..'\n • نسبه تفاعلك - '..string.sub(nspatfa, 1,5)..' %\n • السحكات - '..edit..'\n • نقاطك - '..NUMPGAME..']\n')
+send(msg.chat_id_, msg.id_,'[\n • ايديك - '..msg.sender_user_id_..'💕\n • معرفك - '..username..'💕\n • رتبتك - '..Rutba(msg.sender_user_id_,msg.chat_id_)..'💕\n • موقعك - '..rtpa..'💕\n • تفاعلك - '..Total_Msg(Msguser)..'💕\n • رسائلك - '..Msguser..'💕\n • نسبه تفاعلك - '..string.sub(nspatfa, 1,5)..' %💕\n • السحكات - '..edit..'💕\n • نقاطك - '..NUMPGAME..']💕\n')
 end
 end
 
@@ -9756,7 +9755,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,' • لا تستطيع استخدام البوت \n  • يرجى الاشتراك بالقناه اولا \n  • <  ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,' • لا تستطيع استخدام البوت \n  • يرجى الاشتراك بالقناه اولا \n  • < جط ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -9963,7 +9962,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -10097,7 +10096,7 @@ local textchuser = datahso:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -10131,7 +10130,7 @@ local textchuser = datahso:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•قناة الاشتراك ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -10202,7 +10201,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'•∞عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•∞<  ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'•∞عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•∞< جط ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -10229,7 +10228,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'•∞عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•∞<  ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'•∞عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•∞< جط ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -10297,7 +10296,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'•∞عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•∞<  ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'•∞عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•∞< جط ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -10358,7 +10357,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'•∞عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•∞<  ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'•∞عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•∞< جط ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -10410,7 +10409,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'•∞عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•∞<  ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'•∞عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•∞< جط ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -10487,7 +10486,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'•∞عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•∞<  ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'•∞عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•∞< جط ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -10524,7 +10523,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'•∞عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•∞<  ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'•∞عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•∞< جط ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -10551,7 +10550,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'•∞عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•∞<  ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'•∞عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•∞< جط ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -10606,7 +10605,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'•┇عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•┇<  ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'•┇عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•┇< جط ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -10648,7 +10647,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'•┇عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•┇<  ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'•┇عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•┇< جط ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -10689,7 +10688,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'•∞عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•∞<  ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'•∞عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•∞< جط ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -10777,7 +10776,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n• <  ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'• عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n• < جط ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -10796,7 +10795,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'•عذراً عـليك الاشتراك في قنـاة البـوت اولآ\n•<  ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'•عذراً عـليك الاشـتࢪاك في قنـاة البـوت اولآ\n•< جط ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -11061,7 +11060,7 @@ local Teext =[[
 *•بالتقيد ، بالطرد ، بالكتم*
 *•الروابط*
 *•المعرف*
-*•التاك*
+*•التاق*
 *•الشارحه*
 *•التعديل*
 *•التثبيت*
@@ -11168,8 +11167,8 @@ local Teext =[[
 * •صورتي*
 *•الابراج*
 *•الزخرفه*
-*•اليوتيوب*
 *•الانستا*
+*•اليوتيوب*
 *•التحويل*
 *•احسب*
 *•الافلام*
@@ -11248,11 +11247,11 @@ local Teext =[[
 *•حساب العمر*
 *•احسب + المواليد *
 *•كمثال احسب 1999/4/18*
-*•●○●○●○●○●•ٴ* 
-•اليوتيوب
-•كمثال بحث محمد السالم
- بصمه + اسم الاغنيه
-صوت + اسم الاغنيه
+*•●○●○●○●○●•ٴ*
+*•اليوتيوب*
+*•كمثال بحث محمد السالم*
+* بصمه + اسم الاغنيه*
+*صوت + اسم الاغنيه*
 *•●○●○●○●○●•ٴ*
 *•التحويلات*
 *•لعرض اوامر تحويل الصيغ*
