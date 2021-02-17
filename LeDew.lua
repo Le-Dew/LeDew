@@ -10997,7 +10997,7 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'احبك' then
-TextReply = 'اموتفيك','اعشقك ','اكرهك
+TextReply = 'اموت فيك'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
