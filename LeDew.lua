@@ -8437,11 +8437,11 @@ end
 if text == ""..(database:get(bot_id..'Name:Bot') or 'بوت').."" then
 Namebot = (database:get(bot_id..'Name:Bot') or 'بوت')
 local LeDew_Msg = {
-'ۿۧهلا ؏ـمࢪي .',
-'اقولك تحبني ؟ وماتناديني بعد؟',
+'هلا عمري .',
+'اقولك احبك ؟ وماتناديني بعد؟',
 'عيوني؟ .',
-'اسمي '..Namebot..' موو بوت ɵ̷̥̥᷄ˬɵ̷̥̥᷅',
-'خلاص لاتنادي بوت ترا والله اطلع',
+'اسمي '..Namebot..' انت البوت ياتبن ',
+'خلاص لاتنادي ترا والله اطلع',
 'عيونه',
 'هلا حبي  .',
 }
@@ -10997,7 +10997,7 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'احبك' then
-TextReply = 'اموتفيك'
+TextReply = 'اموتفيك','اعشقك ','اكرهك
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
