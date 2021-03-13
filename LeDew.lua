@@ -2668,7 +2668,7 @@ return false
 end
 if text == 'ابي بوت' or text == 'ابي مطور' or text == 'خوش سورس' or text == 'سورس ديو' or text == 'ابي بوت حمايه' or text == 'سورس ديو' then
 Text = [[
-•- DEV @mtgr.dls مبرمج بوتات•
+•- DEV @mtgr_dls مبرمج بوتات•
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -2692,7 +2692,7 @@ Text = [[
 send(msg.chat_id_, msg.id_,Text)
 return false
 end
-if text == '@mtgr.dls' or text == '@sordls' or text == 'عبدالله ' then
+if text == '@mtgr_dls' or text == '@sordls' or text == 'عبدالله ' then
 Text = [[
  مبرمج السورس
 ]]
