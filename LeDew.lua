@@ -8438,10 +8438,10 @@ if text == ""..(database:get(bot_id..'Name:Bot') or 'بوت').."" then
 Namebot = (database:get(bot_id..'Name:Bot') or 'بوت')
 local LeDLS_Msg = {
 'ۿۧهلا عمري .',
-'اقولك احبك ؟ وماتناديني بعد؟',
+'يبو شتبي اهرج',
 'عيوني؟ .',
 'عيون '..Namebot..' آمر ',
-'بتسكت ولا احظرك؟ ',
+'ها ',
 'ازعجتني ترا',
 'هلا حبي  .',
 }
