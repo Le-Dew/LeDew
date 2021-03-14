@@ -770,7 +770,7 @@ end
 return false
 end
 if SudoBot(msg) then
-local bl =  '-  Welcome DLS المطور الاساسي \n سورس ديو \n يمكنك تحكم في البوتات من الكيبورد أسفل \n[تابع جديدنا](t.me/sordls) '
+local bl =  '-  Welcome DLS المطور الاساسي \n سورس دلس  \n يمكنك تحكم في البوتات من الكيبورد أسفل \n[تابع جديدنا](t.me/sordls) '
 local keyboard = {
     {'•معلومات الكيبورد•'},
       {'•ضع اسم للبوت•'},
@@ -972,7 +972,7 @@ dofile('LeDLS.lua')
 end
 if text == 'الاصدار™' and SudoBot(msg) then
 database:del(bot_id..'Srt:Bot')
-send(msg.chat_id_, msg.id_,'اصدار سورس ديو الاول 1')
+send(msg.chat_id_, msg.id_,'اصدار سورس دلس  الاول 1')
 end
 if text == '•معلومات الكيبورد•' and SudoBot(msg) then
 database:del(bot_id..'Sart:Bot')
@@ -2666,7 +2666,7 @@ Text = [[
 send(msg.chat_id_, msg.id_,Text)
 return false
 end
-if text == 'ابي بوت' or text == 'ابي مطور' or text == 'خوش سورس' or text == 'سورس ديو' or text == 'ابي بوت حمايه' or text == 'سورس ديو' then
+if text == 'ابي بوت' or text == 'ابي مطور' or text == 'خوش سورس' or text == 'سورس دلس ' or text == 'ابي بوت حمايه' or text == 'سورس دلس ' then
 Text = [[
 •- DEV @mtgr_dls مبرمج بوتات•
 ]]
@@ -3193,30 +3193,30 @@ tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,dat
 send(msg.chat_id_, msg.id_,'*• الرتبه >* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'sordls')..')\n*• الاسم >* ['..utf8.sub(data.first_name_,0,15)..'](T.ME/'..(data.username_ or 'sordls')..') \n*تم فتح الصور*\n')
 end,nil)
 end
-if text == 'قفل الفيديو' and Mod(msg) and msg.reply_to_message_id_ == 0 then
+if text == 'قفل الفيدلس ' and Mod(msg) and msg.reply_to_message_id_ == 0 then
 database:set(bot_id.."lock:Video"..msg.chat_id_,'del')
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data)
-send(msg.chat_id_, msg.id_,'*• الرتبه >* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'sordls')..')\n*• الاسم >* ['..utf8.sub(data.first_name_,0,15)..'](T.ME/'..(data.username_ or 'sordls')..') \n*تم قفـل الفيديو*\n')
+send(msg.chat_id_, msg.id_,'*• الرتبه >* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'sordls')..')\n*• الاسم >* ['..utf8.sub(data.first_name_,0,15)..'](T.ME/'..(data.username_ or 'sordls')..') \n*تم قفـل الفيدلس *\n')
 end,nil)
-elseif text == 'قفل الفيديو بالتقيد' and Mod(msg) and msg.reply_to_message_id_ == 0 then
+elseif text == 'قفل الفيدلس  بالتقيد' and Mod(msg) and msg.reply_to_message_id_ == 0 then
 database:set(bot_id.."lock:Video"..msg.chat_id_,'ked')
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data)
-send(msg.chat_id_, msg.id_,'*• الرتبه >* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'sordls')..')\n*• الاسم >* ['..utf8.sub(data.first_name_,0,15)..'](T.ME/'..(data.username_ or 'sordls')..') \n*تم قفـل الفيديو بالتقيد*\n')
+send(msg.chat_id_, msg.id_,'*• الرتبه >* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'sordls')..')\n*• الاسم >* ['..utf8.sub(data.first_name_,0,15)..'](T.ME/'..(data.username_ or 'sordls')..') \n*تم قفـل الفيدلس  بالتقيد*\n')
 end,nil)
-elseif text == 'قفل الفيديو بالكتم' and Mod(msg) and msg.reply_to_message_id_ == 0 then
+elseif text == 'قفل الفيدلس  بالكتم' and Mod(msg) and msg.reply_to_message_id_ == 0 then
 database:set(bot_id.."lock:Video"..msg.chat_id_,'ktm')
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data)
-send(msg.chat_id_, msg.id_,'*• الرتبه >* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'sordls')..')\n*• الاسم >* ['..utf8.sub(data.first_name_,0,15)..'](T.ME/'..(data.username_ or 'sordls')..') \n*تم قفـل الفيديو بالكتم*\n')
+send(msg.chat_id_, msg.id_,'*• الرتبه >* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'sordls')..')\n*• الاسم >* ['..utf8.sub(data.first_name_,0,15)..'](T.ME/'..(data.username_ or 'sordls')..') \n*تم قفـل الفيدلس  بالكتم*\n')
 end,nil)
-elseif text == 'قفل الفيديو بالطرد' and Mod(msg) and msg.reply_to_message_id_ == 0 then
+elseif text == 'قفل الفيدلس  بالطرد' and Mod(msg) and msg.reply_to_message_id_ == 0 then
 database:set(bot_id.."lock:Video"..msg.chat_id_,'kick')
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data)
-send(msg.chat_id_, msg.id_,'*• الرتبه >* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'sordls')..')\n*• الاسم >* ['..utf8.sub(data.first_name_,0,15)..'](T.ME/'..(data.username_ or 'sordls')..') \n*تم قفـل الفيديو بالطرد*\n')
+send(msg.chat_id_, msg.id_,'*• الرتبه >* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'sordls')..')\n*• الاسم >* ['..utf8.sub(data.first_name_,0,15)..'](T.ME/'..(data.username_ or 'sordls')..') \n*تم قفـل الفيدلس  بالطرد*\n')
 end,nil)
-elseif text == 'فتح الفيديو' and Mod(msg) and msg.reply_to_message_id_ == 0 then
+elseif text == 'فتح الفيدلس ' and Mod(msg) and msg.reply_to_message_id_ == 0 then
 database:del(bot_id.."lock:Video"..msg.chat_id_)
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data)
-send(msg.chat_id_, msg.id_,'*• الرتبه >* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'sordls')..')\n*• الاسم >* ['..utf8.sub(data.first_name_,0,15)..'](T.ME/'..(data.username_ or 'sordls')..') \n*تم فتح الفيديو*\n')
+send(msg.chat_id_, msg.id_,'*• الرتبه >* ['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](T.ME/'..(data.username_ or 'sordls')..')\n*• الاسم >* ['..utf8.sub(data.first_name_,0,15)..'](T.ME/'..(data.username_ or 'sordls')..') \n*تم فتح الفيدلس *\n')
 end,nil)
 end
 if text == 'قفل المتحركه' and Mod(msg) and msg.reply_to_message_id_ == 0 then
@@ -7327,7 +7327,7 @@ local text =
 ' }\n'..' المتحركه > { '..lock_gif..
 ' }\n'..' الملفات > { '..lock_file..
 ' }\n'..' الدردشه > { '..lock_text..
-' }\n'..' الفيديو > { '..lock_ved..
+' }\n'..' الفيدلس  > { '..lock_ved..
 ' }\n'..' الصور > { '..lock_photo..
 ' }\n *•●○●○●○●•ٴ*'..
 '\n'..'• الصوت > { '..lock_muse..
@@ -8764,7 +8764,7 @@ db = 'رساله '
 elseif database:get(bot_id.."Add:Rd:Sudo:Photo"..v) then
 db = 'صوره '
 elseif database:get(bot_id.."Add:Rd:Sudo:Video"..v) then
-db = 'فيديو '
+db = 'فيدلس  '
 elseif database:get(bot_id.."Add:Rd:Sudo:File"..v) then
 db = 'ملف '
 elseif database:get(bot_id.."Add:Rd:Sudo:Audio"..v) then
@@ -8827,7 +8827,7 @@ end
 end
 if text and text:match("^(.*)$") then
 if database:get(bot_id..'Set:Rd'..msg.sender_user_id_..':'..msg.chat_id_) == 'true' then
-send(msg.chat_id_, msg.id_,' ارسل الرد الذي تريده سواء كان {صوره,فيديو,متحركه,ملصق,بصمه,صوت}')
+send(msg.chat_id_, msg.id_,' ارسل الرد الذي تريده سواء كان {صوره,فيدلس ,متحركه,ملصق,بصمه,صوت}')
 database:set(bot_id..'Set:Rd'..msg.sender_user_id_..':'..msg.chat_id_, 'true1')
 database:set(bot_id..'Text:Sudo:Bot'..msg.sender_user_id_..':'..msg.chat_id_, text)
 database:sadd(bot_id..'List:Rd:Sudo', text)
@@ -8969,7 +8969,7 @@ db = 'رساله •'
 elseif database:get(bot_id.."Add:Rd:Manager:Photo"..v..msg.chat_id_) then
 db = 'صوره •'
 elseif database:get(bot_id.."Add:Rd:Manager:Video"..v..msg.chat_id_) then
-db = 'فيديو •'
+db = 'فيدلس  •'
 elseif database:get(bot_id.."Add:Rd:Manager:File"..v..msg.chat_id_) then
 db = 'ملف •'
 elseif database:get(bot_id.."Add:Rd:Manager:Audio"..v..msg.chat_id_) then
@@ -9032,7 +9032,7 @@ end
 end
 if text and text:match("^(.*)$") then
 if database:get(bot_id..'Set:Manager:rd'..msg.sender_user_id_..':'..msg.chat_id_) == 'true' then
-send(msg.chat_id_, msg.id_,'• ارسل الرد الذي تريده سواء كان {صوره,فيديو,متحركه,ملصق,بصمه,صوت}')
+send(msg.chat_id_, msg.id_,'• ارسل الرد الذي تريده سواء كان {صوره,فيدلس ,متحركه,ملصق,بصمه,صوت}')
 database:set(bot_id..'Set:Manager:rd'..msg.sender_user_id_..':'..msg.chat_id_,'true1')
 database:set(bot_id..'Text:Manager'..msg.sender_user_id_..':'..msg.chat_id_, text)
 database:del(bot_id.."Add:Rd:Manager:Gif"..text..msg.chat_id_)
@@ -9136,7 +9136,7 @@ database:sadd(bot_id..'Spam:Texting'..msg.sender_user_id_,text)
 end
 end
 end
-if text == ""..(database:get(bot_id..'Name:Bot') or 'ديو').." غادر" or text == 'بوت غادر' then
+if text == ""..(database:get(bot_id..'Name:Bot') or 'دلس ').." غادر" or text == 'بوت غادر' then
 if Sudo(msg) and not database:get(bot_id..'Left:Bot'..msg.chat_id_)  then
 tdcli_function ({ID = "ChangeChatMemberStatus",chat_id_=msg.chat_id_,user_id_=bot_id,status_={ID = "ChatMemberStatusLeft"},},function(e,g) end, nil)
 send(msg.chat_id_, msg.id_,'•وجودنا جميع وبعدنا خساره تم مغادرة المجموعه')
@@ -9146,7 +9146,7 @@ return false
 end
 -------------------------------
 if text == 'بوت' then
-Namebot = (database:get(bot_id..'Name:Bot') or 'ديو')
+Namebot = (database:get(bot_id..'Name:Bot') or 'دلس ')
 send(msg.chat_id_, msg.id_,'*اسمي '..Namebot..'*')
 end
 if text == 'الاحصائيات' then
@@ -11066,7 +11066,7 @@ local Teext =[[
 *•الكلايش*
 *•السيلفي*
 *•الملصقات*
-*•الفيديو*
+*•الفيدلس *
 *•الانلاين*
 *•الدردشه*
 *•●○●○●○●•*
@@ -11258,7 +11258,7 @@ local Teext =[[
 *•كمثال زخرفه محمد*
 *•●○●○●○●○●•*
 *•الالعاب الاحترافيه*
-*•اكتب العاب ديو*
+*•اكتب العاب دلس *
 *•●○●○●○●○●•*
 *•غنيلي*
 *•لعرض اغاني عشوائيه*
