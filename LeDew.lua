@@ -8437,13 +8437,13 @@ end
 if text == ""..(database:get(bot_id..'Name:Bot') or 'بوت').."" then
 Namebot = (database:get(bot_id..'Name:Bot') or 'بوت')
 local LeDew_Msg = {
-'ۿۧهلا عمري .',
+هاه
 'ها ؟',
-'عيوني؟ .',
+ها اخلص تكلم  
 'عيون '..Namebot..' آمر ',
 'يبو شتبي اهرج ',
 'ازعجتني ترا',
-'هلا حبي  .',
+خلاص يرحم لي والديك فكني منك ما بخدمك 
 }
 send(msg.chat_id_, msg.id_,'['..LeDew_Msg[math.random(#LeDew_Msg)]..']')
 return false
