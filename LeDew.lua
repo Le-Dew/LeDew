@@ -4703,7 +4703,7 @@ end
 function start_function(extra, result, success)
 database:sadd(bot_id..'Zoag:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\n🙋🏻‍♀️╿ واخيرا ألتم شمل المحبين 🤩
+usertext = '\n'🙋🏻‍♀️╿ واخيرا ألتم شمل المحبين 🤩
 🎫│تم زواجكم يالكناري بنجاح✔️
 🛠╽ يالله تتهنون ياكتاكيتي ♥️'
 local  statuss  = ''
