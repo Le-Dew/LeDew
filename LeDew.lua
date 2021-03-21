@@ -2572,9 +2572,9 @@ end
 if data.first_name_ then
 if LeDewChengName ~= data.first_name_ then
 local Text = {
-  "اسمك القديم كان احلى ",
-"ليش غيرت اسمك يحلو؟ ",
-"هذا لحلو غير اسمه ",
+  "شفيك مغير اسمك ترا اسمك القديم اطلق .",
+"مغير اسمك ؟🗿",
+"في احد منتحلك او شي ؟ ليه مغير اسمك !",
 }
 send(msg.chat_id_, msg.id_,Text[math.random(#Text)])
 end
@@ -2606,9 +2606,9 @@ end
 if data.username_ then
 if LeDewChengUserName ~= data.username_ then
 local Text = {
-'ليش غيرت معرفك شنو نشروك بقنوات نصب؟ 🌞😹😹😹',
-"هاها ليش غيرت معرفك 🤞😂😂",
-"شسالفه ليش غيرت معرفك 😐🌝",
+'ليه غيرت يوزرك حاطينك بقنوات بلاك لست ؟',
+"قفطتك ليه مغير معرفك ؟",
+"ليه مغير معرفك اذا زرفت احد ترا ما ببلغ .",
 "غير معرفه سرقو معرفه بسرعه \n هاذه معرفه : @"..data.username_.."",
 'ها ياحلو ماكان معرفك \n ليش غيرته ل @'..data.username_..' ',
 'ها يولد ليش مغير معرفك',
@@ -2637,19 +2637,19 @@ if data.id_ ~= bot_id then
 local LeDewChengPhoto = database:get(bot_id.."LeDew:Cheng:Photo"..data.id_)
 if not data.profile_photo_ then
 if LeDewChengPhoto then
-send(msg.chat_id_, msg.id_, "حذف كل صوره الحلو 😂👌🏻")
+send(msg.chat_id_, msg.id_, "حذف كل صوره حلوة .")
 database:del(bot_id.."LeDew:Cheng:Photo"..data.id_)
 end
 end
 if data.profile_photo_.big_.persistent_id_ then
 if LeDewChengPhoto ~= data.profile_photo_.big_.persistent_id_ then
 local Text = {
-  "ليش غيرت صورتك  يا حلو ",
-  "منور طالع حلو مع صوره جديده",
-  "ها ليش غيرت صورتك 🤔😹",
-  "ليش غيرت صورتك شنو حبيت وحده جديده 😹😹🌚",
-  "ليش غيرت صورتك شنو تهاوشت مع الحب ؟😹🌞",
-  "ليش غيرت الصوره شسالفه ؟؟ 🤔🌞",
+  "ليش غيرت صورتك ترا القديمة احلى .",
+  "صورتك زي الزق .",
+  "صورتك حلوة عجبتني بس ليه مغيرها ؟",
+  "شفيك انت مغير صورتك عطني سبب مقنع وما بطردك .",
+  "شارد من احد ؟ ليه مغير صورتك ..",
+  "يليل وش مسوي مغير صورتك ؟ ",
 }
 send(msg.chat_id_, msg.id_,Text[math.random(#Text)])
 end
@@ -2678,7 +2678,7 @@ Text = [[
 هلا حـبـي منـور !
 متـوفر تـنـصيب بوتـات عـسـورس دلـس •
 احـدث وأسـرع البـوتات وضمـان وثـقه ♤.
-للـستفسـار تفـضلو عـند راعـي السـورس  @mtgr_dls 
+للـستفسـار تفـضلو عـند راعـي السـورس [@mtgr_dls]
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -4212,7 +4212,7 @@ end
 
 if text == ("تاق للمطايه") and Mod(msg) then
 local list = database:smembers(bot_id..'Mote:User'..msg.chat_id_)
-t = "\n•يمطاية تعالو يبونكم 😹😭💞 . \n•━━━━•━━━━•\n"
+t = "\n•تبي تلحقهم ؟. \n•━━━━•━━━━•\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4221,7 +4221,7 @@ else
 end
 end
 if #list == 0 then
-t = "•لايوجد مطايةه 😹😔💞"
+t = "•مافي يلا دز "
 end
 send(msg.chat_id_, msg.id_, t)
 end
@@ -4272,7 +4272,7 @@ end
 -----------------------------------------------------
 if text == ("تاك للاغبياء") and Mod(msg) then
 local list = database:smembers(bot_id..'Athol:User'..msg.chat_id_)
-t = "\n•ياأغبياء تعالو يبونكم 😹😭💞 . \n•━━━━•━━━━•\n"
+t = "\n•يبو شفيك قايم تسوي تاق لنفسك ؟  . \n•━━━━•━━━━•\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4332,7 +4332,7 @@ end
 -----------------------------------------------------
 if text == ("تاق للقمر") and Mod(msg) then
 local list = database:smembers(bot_id..'Naby:User'..msg.chat_id_)
-t = "\n•يا قمر تعالو يبونكم 😹😭💞 . \n•━━━━•━━━━•\n"
+t = "\n•تعالو وينكم . . \n•━━━━•━━━━•\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4341,7 +4341,7 @@ else
 end
 end
 if #list == 0 then
-t = "•لايوجد قمر كلهم بقر "
+t = "•لا يوجد قمر بالمجموعه . "
 end
 send(msg.chat_id_, msg.id_, t)
 end
@@ -4359,7 +4359,7 @@ end
 function start_function(extra, result, success)
 database:sadd(bot_id..'Naby:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\n•رفعتلكم قمر جديد استقبلو '
+usertext = '\n•تم رفعته . '
 local  statuss  = ''
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
@@ -4381,7 +4381,7 @@ end
 function start_function(extra, result, success)
 database:srem(bot_id..'Naby:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\n•متستاهل تكون قمر نزلتك '
+usertext = '\n•ما تستاهل انزل يلا . '
 status  = ''
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
@@ -4390,9 +4390,9 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 -----------------------------------------------------
-if text == ("تاك للكلاب") and Mod(msg) then
+if text == ("تاق للكلاب ") and Mod(msg) then
 local list = database:smembers(bot_id..'Glb:User'..msg.chat_id_)
-t = "\n•ياكلاب تعالو يبونكم 😹😭💞 . \n•━━━━•━━━━•\n"
+t = "\n•علمنا كيف تسوي تاق لنفسك .  . \n•━━━━•━━━━•\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4419,7 +4419,7 @@ end
 function start_function(extra, result, success)
 database:sadd(bot_id..'Glb:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\n•تم رفع العضو كلب في المجموعة 😭😹💞'
+usertext = '\n•دن رفعته .'
 local  statuss  = ''
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
@@ -4441,7 +4441,7 @@ end
 function start_function(extra, result, success)
 database:srem(bot_id..'Glb:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\n•تم تنزيل العضو كلب في المجموعة 😭😹💞'
+usertext = '\n•نزلته يلا دز.'
 status  = ''
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
@@ -4452,7 +4452,7 @@ end
 -----------------------------------------------------
 if text == ("تاق للخرفان ") and Mod(msg) then
 local list = database:smembers(bot_id..'Zgal:User'..msg.chat_id_)
-t = "\n•ياخرفان تعالو يبونكم 😹😭💞 . \n•━━━━•━━━━•\n"
+t = "\n•لا اصيدك  . \n•━━━━•━━━━•\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4479,7 +4479,7 @@ end
 function start_function(extra, result, success)
 database:sadd(bot_id..'Zgal:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\n•تم رفع العضو خروف في المجموعة 😭😹💞'
+usertext = '\n•تم رفعه خروف .'
 local  statuss  = ''
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
@@ -4501,7 +4501,7 @@ end
 function start_function(extra, result, success)
 database:srem(bot_id..'Zgal:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\n•تم تنزيل العضو خروف في المجموعة 😭😹💞'
+usertext = '\n•نزلته بس منشن الي يخرفن .'
 status  = ''
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
@@ -4512,7 +4512,7 @@ end
 -----------------------------------------------------
 if text == ("تاق للنصابين ") and Mod(msg) then
 local list = database:smembers(bot_id..'Zahf:User'..msg.chat_id_)
-t = "\n•يانصابين تعالو يبونكم 😹😭💞 . \n•━━━━•━━━━•\n"
+t = "\n•تعالو بسرعة . . \n•━━━━•━━━━•\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4521,7 +4521,7 @@ else
 end
 end
 if #list == 0 then
-t = "•لايوجد نصابين 😹😔💞"
+t = "•مافي نصابين ."
 end
 send(msg.chat_id_, msg.id_, t)
 end
@@ -4539,7 +4539,7 @@ end
 function start_function(extra, result, success)
 database:sadd(bot_id..'Zahf:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\n•تم رفع العضو نصاب في المجموعة 😭😹💞'
+usertext = '\n•رفعته بس وش مسوي هو ؟ '
 local  statuss  = ''
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
@@ -4554,14 +4554,14 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'•  𝑾𝒆𝒍𝒄𝒐𝒎𝒆 Dew •\n• لايمكنك استخدام البوت •\n• عليك الاشتراك في القناة •\n• اشترك اولا ['..database:get(bot_id..'add:ch:username')..'•]')
+send(msg.chat_id_, msg.id_,'•  𝑾𝒆𝒍𝒄𝒐𝒎𝒆 DLS •\n• لايمكنك استخدام البوت •\n• عليك الاشتراك في القناة •\n• اشترك اولا ['..database:get(bot_id..'add:ch:username')..'•]')
 end
 return false
 end
 function start_function(extra, result, success)
 database:srem(bot_id..'Zahf:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\n•تم تنزيل العضو نصاب في المجموعة 😭😹💞'
+usertext = '\n•وش مسوي عشان هو عشان انزله ؟ '
 status  = ''
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
@@ -4570,9 +4570,9 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 -----------------------------------------------------
-if text == ("تاك للي بقلبي") and Mod(msg) then
+if text == ("تاق للي بقلبي ترا احبكم .") and Mod(msg) then
 local list = database:smembers(bot_id..'Galby:User'..msg.chat_id_)
-t = "\n•يالي بقلبي تعالو يبونكم 😹😭💞 . \n•━━━━•━━━━•\n"
+t = "\n•لا اصيدك  . \n•━━━━•━━━━•\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4581,7 +4581,7 @@ else
 end
 end
 if #list == 0 then
-t = "•لايوجد كلوب 😹😔💞"
+t = "•تدور امثالك يا هطف ؟"
 end
 send(msg.chat_id_, msg.id_, t)
 end
@@ -4599,7 +4599,7 @@ end
 function start_function(extra, result, success)
 database:sadd(bot_id..'Galby:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\n•رفعتك بقلبي لتجرحني 😘😭💞'
+usertext = '\n•بحبك تحبني ؟ '
 local  statuss  = ''
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
@@ -4621,7 +4621,7 @@ end
 function start_function(extra, result, success)
 database:srem(bot_id..'Galby:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\n•مو قلبي لتجرحني نزلتك من قلبي 😭💞'
+usertext = '\n•يلا دز محد ميت عليك .'
 status  = ''
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
@@ -4630,9 +4630,9 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 -----------------------------------------------------
-if text == ("تاك للتوج") and Mod(msg) then
+if text == ("تاق للي ماسكين تاج .") and Mod(msg) then
 local list = database:smembers(bot_id..'Tag:User'..msg.chat_id_)
-t = "\n•ياتوج تعالو يردونكم 😹😭💞 . \n•━━━━•━━━━•\n"
+t = "\n•لا اصيد الي مايجي . . \n•━━━━•━━━━•\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4641,7 +4641,7 @@ else
 end
 end
 if #list == 0 then
-t = "•لايوجد تاج😹😔💞"
+t = "•لايوجد تاج ."
 end
 send(msg.chat_id_, msg.id_, t)
 end
@@ -4659,7 +4659,7 @@ end
 function start_function(extra, result, success)
 database:sadd(bot_id..'Tag:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\n•هو تاج ميحتاج ارفعه 🤴🏻💞'
+usertext = '\n•هو تاج ميحتاج ارفعه .'
 local  statuss  = ''
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
@@ -4681,7 +4681,7 @@ end
 function start_function(extra, result, success)
 database:srem(bot_id..'Tag:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\n•التاج ماينزل من مكانه 🤴🏻💞'
+usertext = '\n•التاج ماينزل من مكانه .'
 status  = ''
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
@@ -4703,7 +4703,7 @@ end
 function start_function(extra, result, success)
 database:sadd(bot_id..'Zoag:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\n•نزوج وماتباوع على غيري 🥺💞'
+usertext = '\nالله يرحمكم يا السناقل .'
 local  statuss  = ''
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
@@ -4724,7 +4724,7 @@ end
 function start_function(extra, result, success)
 database:sadd(bot_id..'Mote:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\n•طالق طالق طالق بالعشرة 😹😭💞'
+usertext = '\nهد لا يقلب مسلسل كويتي .'
 local  statuss  = ''
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
@@ -8437,13 +8437,13 @@ end
 if text == ""..(database:get(bot_id..'Name:Bot') or 'بوت').."" then
 Namebot = (database:get(bot_id..'Name:Bot') or 'بوت')
 local LeDew_Msg = {
-'ۿۧهلا عمري .',
-'ها ؟',
-'عيوني؟ .',
+'تحسبني بمدحك ؟ اخلص شتبي',
+'ادز تقولي بوت وتبيني اخدمك ؟',
+'ضايقه بي من كل مكان وجاي انت وتناديني ؟ دز',
 'عيون '..Namebot..' آمر ',
-'يبو شتبي اهرج ',
+'يخوي شفيك انت مزعج امي كل شوي مناديني ',
 'ازعجتني ترا',
-'هلا حبي  .',
+'هاه ',
 }
 send(msg.chat_id_, msg.id_,'['..LeDew_Msg[math.random(#LeDew_Msg)]..']')
 return false
@@ -10569,7 +10569,7 @@ name = string.gsub(name,'⛄️','☃☃☃☃☃☃⛄️☃☃☃☃')
 name = string.gsub(name,'👨‍🔬','👩‍🔬👩‍🔬👩‍🔬👩‍🔬👩‍🔬??‍🔬👩‍🔬👩‍🔬👨‍🔬👩‍🔬👩‍🔬👩‍🔬')
 name = string.gsub(name,'•','👩‍💻👩‍💻👩‍‍💻👩‍‍💻👩‍💻•👩‍💻👩‍💻??‍💻')
 name = string.gsub(name,'👨‍🔧','👩‍🔧👩‍🔧👩‍🔧👩‍🔧👩‍🔧👩‍🔧👨‍🔧👩‍🔧')
-name = string.gsub(name,'•‍🍳','👨‍🍳👨‍🍳👨‍🍳👨‍🍳👨‍🍳👩‍🍳??‍🍳👨‍🍳👨‍??')
+name = string.gsub(name,'•‍🍳','👨‍🍳👨‍🍳👨‍🍳👨‍🍳👨‍🍳👩‍🍳👨‍🍳👨‍🍳👨‍??')
 name = string.gsub(name,'🧚‍♀','🧚‍♂🧚‍♂🧚‍♂🧚‍♂🧚‍♀🧚‍♂🧚‍♂')
 name = string.gsub(name,'🧜‍♂','🧜‍♀🧜‍♀🧜‍♀🧜‍♀🧜‍♀🧚‍♂🧜‍♀🧜‍♀🧜‍♀')
 name = string.gsub(name,'🧝‍♂','🧝‍♀🧝‍♀🧝‍♀🧝‍♀🧝‍♀🧝‍♂🧝‍♀🧝‍♀🧝‍♀')
@@ -10855,42 +10855,42 @@ send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
 return false
 end
 if text == "هينه" or text == "رزله" then
-local texting = {"وانا فاضي اهين حيوانات ."," مب فاضي له 😭💘 ."}
+local texting = {"وانا فاضي اهين حيوانات ."," مب فاضي له ."}
 send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
 return false
 end
 if text == '🙂' then
-TextReply = 'شفيك مبتسم😉'
+TextReply = 'ابتسم عادي بس خلني ارتاح تكفى صدعت .'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == '🌝' then
-TextReply = 'يالبيه ☹️💗'
+TextReply = 'ها وش انت بعد درينا وقسم .'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'صباحو' then
-TextReply = 'صباح العسل 🥳💙'
+TextReply = 'ها وش '
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'صباح الخير' then
-TextReply = 'صباح النور 🥳💙'
+TextReply = 'منور يسطى .'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'كفو' then
-TextReply = 'كفوك الطيب'
+TextReply = 'تمام .'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == '😌' then
-TextReply = 'الثقه↗️↗️↗️'
+TextReply = 'هدي لا تبول علينا .'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'اها' then
-TextReply = 'ايـي'
+TextReply = 'طيب .'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -10900,72 +10900,72 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'شسمك' then
-TextReply = 'ماتجوف؟'
+TextReply = 'انظر لقد عصى امه ف اصبح احول .'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'شوف' then
-TextReply = 'خلصنا'
+TextReply = 'ها .'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'مساء الخير' then
-TextReply = 'مساء النور 🥳💙'
+TextReply = 'تراني بوت مب بشري 🗿.'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'المدرسه' then
-TextReply = 'على حصتك انت وياه😂'
+TextReply = 'دز ع حصتك .'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text == 'منو ديحذف رسائلي' then
-TextReply = 'يمكن انا👀'
+if text == 'من يحذف رسايلي ؟' then
+TextReply = 'انت وش تشوف ؟'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'البوت واقف' then
-TextReply = 'ايوالله تعبت 💔'
+TextReply = 'كل شوي ما غير بوت بوت بوت بوت خلاص يرحم امكم تكفون .'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'انسى' then
-TextReply = 'تمام،'
+TextReply = 'سجل واحد زله على النفر ذا .'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'طفش' then
-TextReply =' اي والله'
+TextReply =' وهو صادز ما تسذب .'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'هههه' then
-TextReply = 'دوم يلبى😍'
+TextReply = 'طيب تكلم وش ليش تضحك ؟'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'ههههه' then
-TextReply = 'دوم'
+TextReply = 'شسالفة بضحك معك ؟'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == '😹' then
-TextReply = 'شعندك تضحك؟'
+TextReply = 'طيب ضحكنا معك .'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'وين' then
-TextReply = 'ستين داهية😂👋'
+TextReply = 'في المكان الي انت خابره زين .'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'اسكت' then
-TextReply = 'شتبي انت؟'
+TextReply = 'هدي يا زلاتان .'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'نايمين' then
-TextReply = 'نوم الهنا😍💙'
+TextReply = 'نوم العوافي ..'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -10975,7 +10975,7 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'فديت' then
-TextReply = 'فديتني 😫😹💞'
+TextReply = 'تمام .'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -10985,17 +10985,17 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'اوف' then
-TextReply = 'شنو؟'
+TextReply = 'علمنا يسطى .'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'احبك' then
-TextReply = 'اموتفيك'
+TextReply = 'ناقصك حنان يالطيب ؟'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'من انت ' then
-TextReply = 'بوت'
+TextReply = 'رجال اجودي'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
