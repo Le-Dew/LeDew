@@ -4212,7 +4212,9 @@ end
 
 if text == ("تاق للمطايه") and Mod(msg) then
 local list = database:smembers(bot_id..'Mote:User'..msg.chat_id_)
-t = "\n•تبي تلحقهم ؟. \n•━━━━•━━━━•\n"
+t = "\nهـلا يعـيوني !
+> تـم تـاق الأعـضاء المطـاياه بالـمجموعه واتـمنى احتـرام الاعضـاء الموجـودين واذا كـان خـويك خـذ راحـتك !.
+> وشكـرا لـكـ/ـي ... \n•━━━━•━━━━•\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4221,7 +4223,9 @@ else
 end
 end
 if #list == 0 then
-t = "•مافي يلا دز "
+t = "هـلا يعـيوني !
+> لا يـوجد اعضـاء مطـاياه بالـمجموعه واتـمنى احتـرام الاعضـاء الموجـودين واذا كـان خـويك خـذ راحـتك !.
+> وشكـرا لـكـ/ـي ... "
 end
 send(msg.chat_id_, msg.id_, t)
 end
@@ -4239,7 +4243,9 @@ end
 function start_function(extra, result, success)
 database:sadd(bot_id..'Mote:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\n•تم رفع العضو مطي في المجموعة '
+usertext = '\nهـلا يعـيوني !
+> تـم رفـع العضـو مطـي بالـمجموعه واتـمنى احتـرام الاعضـاء الموجـودين واذا كـان خـويك خـذ راحـتك !.
+> وشكـرا لـكـ/ـي ...'
 local  statuss  = ''
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
@@ -4261,7 +4267,9 @@ end
 function start_function(extra, result, success)
 database:srem(bot_id..'Mote:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\n•تم تنزيل العضو مطي في المجموعة '
+usertext = '\nهـلا يعـيوني !
+> تـم تنـزيل العضـو مطـي بالـمجموعه واتـمنى احتـرام الاعضـاء الموجـودين واذا كـان خـويك خـذ راحـتك !.
+> وشكـرا لـكـ/ـي ...'
 status  = ''
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
@@ -4272,7 +4280,9 @@ end
 -----------------------------------------------------
 if text == ("تاك للاغبياء") and Mod(msg) then
 local list = database:smembers(bot_id..'Athol:User'..msg.chat_id_)
-t = "\n•يبو شفيك قايم تسوي تاق لنفسك ؟  . \n•━━━━•━━━━•\n"
+t = "\nهـلا يعـيوني !
+> تـم تـاك الاعضـاء الاغبياء بالـمجموعه واتـمنى احتـرام الاعضـاء الموجـودين واذا كـان خـويك خـذ راحـتك !.
+> وشكـرا لـكـ/ـي .... \n•━━━━•━━━━•\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4281,7 +4291,9 @@ else
 end
 end
 if #list == 0 then
-t = "•لايوجد اغبياء "
+t = "هـلا يعـيوني !
+> لا يـوجد اعضـاء اغبياء بالـمجموعه واتـمنى احتـرام الاعضـاء الموجـودين واذا كـان خـويك خـذ راحـتك !.
+> وشكـرا لـكـ/ـي ..."
 end
 send(msg.chat_id_, msg.id_, t)
 end
@@ -4299,7 +4311,9 @@ end
 function start_function(extra, result, success)
 database:sadd(bot_id..'Athol:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\n•تم رفع العضو غبي في المجموعة '
+usertext = '\nهـلا يعـيوني !
+> تـم رفـع العضـو غبـي بالـمجموعه واتـمنى احتـرام الاعضـاء الموجـودين واذا كـان خـويك خـذ راحـتك !.
+> وشكـرا لـكـ/ـي ... '
 local  statuss  = ''
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
@@ -4321,7 +4335,9 @@ end
 function start_function(extra, result, success)
 database:srem(bot_id..'Athol:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\n•تم تنزيل العضو غبي في المجموعة '
+usertext = '\nهـلا يعـيوني !
+> تـم تنـزيل العضـو غبـي بالـمجموعه واتـمنى احتـرام الاعضـاء الموجـودين واذا كـان خـويك خـذ راحـتك !.
+> وشكـرا لـكـ/ـي ... '
 status  = ''
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
@@ -4332,7 +4348,9 @@ end
 -----------------------------------------------------
 if text == ("تاق للقمر") and Mod(msg) then
 local list = database:smembers(bot_id..'Naby:User'..msg.chat_id_)
-t = "\n•تعالو وينكم . . \n•━━━━•━━━━•\n"
+t = "\nهـلا يعـيوني !
+> تـم تـاق الاعضـاء الأقمار بالـمجموعه واتـمنى احتـرام الاعضـاء الموجـودين واذا كـان خـويك خـذ راحـتك !.
+> وشكـرا لـكـ/ـي ... . \n•━━━━•━━━━•\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4341,7 +4359,9 @@ else
 end
 end
 if #list == 0 then
-t = "•لا يوجد قمر بالمجموعه . "
+t = "هـلا يعـيوني !
+> لا يـوجد اعضـاء اقمار بالـمجموعه واتـمنى احتـرام الاعضـاء الموجـودين واذا كـان خـويك خـذ راحـتك !.
+> وشكـرا لـكـ/ـي ... "
 end
 send(msg.chat_id_, msg.id_, t)
 end
@@ -4359,7 +4379,9 @@ end
 function start_function(extra, result, success)
 database:sadd(bot_id..'Naby:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\n•تم رفعته . '
+usertext = '\nهـلا يعـيوني !
+> تـم رفـع العضـو قمر بالـمجموعه واتـمنى احتـرام الاعضـاء الموجـودين واذا كـان خـويك خـذ راحـتك !.
+> وشكـرا لـكـ/ـي ... '
 local  statuss  = ''
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
@@ -4381,7 +4403,9 @@ end
 function start_function(extra, result, success)
 database:srem(bot_id..'Naby:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\n•ما تستاهل انزل يلا . '
+usertext = '\nهـلا يعـيوني !
+> تـم تنـزيل العضـو قمر بالـمجموعه واتـمنى احتـرام الاعضـاء الموجـودين واذا كـان خـويك خـذ راحـتك !.
+> وشكـرا لـكـ/ـي ... '
 status  = ''
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
@@ -4392,7 +4416,9 @@ end
 -----------------------------------------------------
 if text == ("تاق للكلاب ") and Mod(msg) then
 local list = database:smembers(bot_id..'Glb:User'..msg.chat_id_)
-t = "\n•علمنا كيف تسوي تاق لنفسك .  . \n•━━━━•━━━━•\n"
+t = "\n> هـلا يعـيوني !
+> لايـوجـد كـلاب بالـمجموعه واتـمنى احتـرام الاعضـاء الموجـودين ! .
+> وشكـرا لـكـ/ـي ... \n•━━━━•━━━━•\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4401,7 +4427,9 @@ else
 end
 end
 if #list == 0 then
-t = "•لايوجد كلاب "
+t = "> هـلا يعـيوني !
+> لايـوجـد كـلاب بالـمجموعه واتـمنى احتـرام الاعضـاء الموجـودين ! .
+> وشكـرا لـكـ/ـي ..."
 end
 send(msg.chat_id_, msg.id_, t)
 end
@@ -4419,7 +4447,9 @@ end
 function start_function(extra, result, success)
 database:sadd(bot_id..'Glb:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\n•دن رفعته .'
+usertext = '\n> هـلا يعـيوني !
+> تـم رفـع العضـو كـلب بالـمجموعه واتـمنى احتـرام الاعضـاء الموجـودين واذا كـان خـويك خـذ راحـتك !.
+> وشكـرا لـكـ/ـي ...'
 local  statuss  = ''
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
@@ -4441,7 +4471,9 @@ end
 function start_function(extra, result, success)
 database:srem(bot_id..'Glb:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\n•نزلته يلا دز.'
+usertext = '\nهـلا يعـيوني !
+> تـم تنـزيل العضـو كـلب بالـمجموعه واتـمنى احتـرام الاعضـاء الموجـودين واذا كـان خـويك خـذ راحـتك !.
+> وشكـرا لـكـ/ـي ...'
 status  = ''
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
@@ -4452,7 +4484,8 @@ end
 -----------------------------------------------------
 if text == ("تاق للخرفان ") and Mod(msg) then
 local list = database:smembers(bot_id..'Zgal:User'..msg.chat_id_)
-t = "\n•لا اصيدك  . \n•━━━━•━━━━•\n"
+t = "\n هـلا يعـيوني !
+> تـم تـاق الاعضـاء الخرفان بالـمجموعه واتـمنى احتـرام الاعضـاء الموجـودين واذا كـان خـويك خـذ راحـتك !.. \n•━━━━•━━━━•\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4461,7 +4494,9 @@ else
 end
 end
 if #list == 0 then
-t = "•لايوجد خرفان "
+t = "يعـيوني !
+> لايـوجد اعـضاء خـرفان بالـمجموعه واتـمنى احتـرام الاعضـاء الموجـودين واذا كـان خـويك خـذ راحـتك !.
+> وشكـرا لـكـ/ـي ... "
 end
 send(msg.chat_id_, msg.id_, t)
 end
@@ -4479,7 +4514,9 @@ end
 function start_function(extra, result, success)
 database:sadd(bot_id..'Zgal:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\n•تم رفعه خروف .'
+usertext = '\nهـلا يعـيوني !
+> تـم رفـع العضـو خـروف بالـمجموعه واتـمنى احتـرام الاعضـاء الموجـودين واذا كـان خـويك خـذ راحـتك !.
+> وشكـرا لـكـ/ـي ...'
 local  statuss  = ''
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
@@ -4501,7 +4538,10 @@ end
 function start_function(extra, result, success)
 database:srem(bot_id..'Zgal:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\n•نزلته بس منشن الي يخرفن .'
+usertext = '\nهـلا يعـيوني !
+> تـم تنـزيل العضـو خـروف بالـمجموعه واتـمنى احتـرام الاعضـاء الموجـودين واذا كـان خـويك خـذ 
+راحـتك !.
+> وشكـرا لـكـ/ـي ....'
 status  = ''
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
@@ -4512,7 +4552,9 @@ end
 -----------------------------------------------------
 if text == ("تاق للنصابين ") and Mod(msg) then
 local list = database:smembers(bot_id..'Zahf:User'..msg.chat_id_)
-t = "\n•تعالو بسرعة . . \n•━━━━•━━━━•\n"
+t = "\nهـلا يعـيوني !
+> تـم تـاق النصابين بالـمجموعه واتـمنى احتـرام الاعضـاء الموجـودين واذا كـان خـويك خـذ راحـتك !.
+> وشكـرا لـكـ/ـي ... . \n•━━━━•━━━━•\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4521,7 +4563,9 @@ else
 end
 end
 if #list == 0 then
-t = "•مافي نصابين ."
+t = "هـلا يعـيوني !
+> لا يـوجد اعضـاء نصابين بالـمجموعه واتـمنى احتـرام الاعضـاء الموجـودين واذا كـان خـويك خـذ راحـتك !.
+> وشكـرا لـكـ/ـي ..."
 end
 send(msg.chat_id_, msg.id_, t)
 end
@@ -4539,7 +4583,8 @@ end
 function start_function(extra, result, success)
 database:sadd(bot_id..'Zahf:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\n•رفعته بس وش مسوي هو ؟ '
+usertext = '\nهـلا يعـيوني !
+> تـم رفـع العضـو نصـاب بالـمجموعه واتـمنى احتـرام الاعضـاء الموجـودين واذا كـان خـويك خـذ راحـتك !. '
 local  statuss  = ''
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
@@ -4561,7 +4606,8 @@ end
 function start_function(extra, result, success)
 database:srem(bot_id..'Zahf:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\n•وش مسوي عشان هو عشان انزله ؟ '
+usertext = '\nهـلا يعـيوني !
+> تـم تنـزيل العضـو نصـاب بالـمجموعه واتـمنى احتـرام الاعضـاء الموجـودين واذا كـان خـويك خـذ راحـتك !. '
 status  = ''
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
@@ -4572,7 +4618,8 @@ end
 -----------------------------------------------------
 if text == ("تاق للي بقلبي ترا احبكم .") and Mod(msg) then
 local list = database:smembers(bot_id..'Galby:User'..msg.chat_id_)
-t = "\n•لا اصيدك  . \n•━━━━•━━━━•\n"
+t = "\nهـلا يعـيوني !
+> تـم تـاق الاعضـاء الي بقـلبك . بالـمجموعه واتـمنى احتـرام الاعضـاء الموجـودين واذا كـان خـويك خـذ راحـتك !.  . \n•━━━━•━━━━•\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4581,7 +4628,8 @@ else
 end
 end
 if #list == 0 then
-t = "•تدور امثالك يا هطف ؟"
+t = "هـلا يعـيوني !
+> لا يـوجد اعضـاء الي بقـلبك . بالـمجموعه واتـمنى احتـرام الاعضـاء الموجـودين واذا كـان خـويك خـذ راحـتك !."
 end
 send(msg.chat_id_, msg.id_, t)
 end
@@ -4599,7 +4647,8 @@ end
 function start_function(extra, result, success)
 database:sadd(bot_id..'Galby:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\n•بحبك تحبني ؟ '
+usertext = '\nهـلا يعـيوني !
+> تـم رفـع العـضو الى قـلبك بالـمجموعه واتـمنى احتـرام الاعضـاء الموجـودين واذا كـان خـويك خـذ راحـتك !. '
 local  statuss  = ''
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
@@ -4632,7 +4681,8 @@ end
 -----------------------------------------------------
 if text == ("تاق للي ماسكين تاج .") and Mod(msg) then
 local list = database:smembers(bot_id..'Tag:User'..msg.chat_id_)
-t = "\n•لا اصيد الي مايجي . . \n•━━━━•━━━━•\n"
+t = "\nهـلا يعـيوني !
+> تـم تـاق الاعضـو الى الي ماسكين تاج بالـمجموعه واتـمنى احتـرام الاعضـاء الموجـودين واذا كـان خـويك خـذ راحـتكـ/ـي !. . . \n•━━━━•━━━━•\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4703,7 +4753,9 @@ end
 function start_function(extra, result, success)
 database:sadd(bot_id..'Zoag:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\nالله يرحمكم يا السناقل .'
+usertext = '\n> هـلا يعيـوني !
+> مبـروك عليـك الزواج بالعـضو .
+> يـديم ..'
 local  statuss  = ''
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
@@ -4724,7 +4776,9 @@ end
 function start_function(extra, result, success)
 database:sadd(bot_id..'Mote:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\nهد لا يقلب مسلسل كويتي .'
+usertext = '\n> هـلا يعـيوني !
+> تـم الطـلاق مـن العضـو بنجـاح .
+> الله يـزوج السـناقل ..'
 local  statuss  = ''
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
@@ -8443,7 +8497,7 @@ local LeDew_Msg = {
 'عيون '..Namebot..' آمر ',
 'يخوي شفيك انت مزعج امي كل شوي مناديني ',
 'ازعجتني ترا',
-'هاه ',
+'الله يرزقك سالفة غيري .',
 }
 send(msg.chat_id_, msg.id_,'['..LeDew_Msg[math.random(#LeDew_Msg)]..']')
 return false
