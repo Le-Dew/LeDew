@@ -4724,10 +4724,7 @@ end
 function start_function(extra, result, success)
 database:sadd(bot_id..'Mote:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\n> هـلا يعـيوني !
-> تـم الطـلاق مـن العضـو بنجـاح .
-> الله يـزوج السـناقل ..
-وشـكرا لكـ/ـي'
+usertext = '\n•طالق طالق طالق بالعشرة 😹😭💞'
 local  statuss  = ''
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
@@ -8440,13 +8437,13 @@ end
 if text == ""..(database:get(bot_id..'Name:Bot') or 'بوت').."" then
 Namebot = (database:get(bot_id..'Name:Bot') or 'بوت')
 local LeDew_Msg = {
-'اشغلت امي وش شفيك شايفني خدامك .',
-'وش',
-'هاه ',
+'ۿۧهلا عمري .',
+'اقولك احبك ؟ وماتناديني بعد؟',
+'عيوني؟ .',
 'عيون '..Namebot..' آمر ',
-'ياليل ترا بحظرك ؟',
-'ادعمني وفكني من الدنيا ',
-'ها وش بعد ؟',
+'بتسكت ولا احظرك؟ ',
+'ازعجتني ترا',
+'هلا حبي  .',
 }
 send(msg.chat_id_, msg.id_,'['..LeDew_Msg[math.random(#LeDew_Msg)]..']')
 return false
