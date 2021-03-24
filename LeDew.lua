@@ -2350,7 +2350,7 @@ if res == 200 then
 audios = json:decode(data)
 if audios.Info == true then
 local done = download_to_file(audios.info,msg.sender_user_id_..'.mp3')
-sendAudio(msg.chat_id_,msg.id_,'./'..msg.sender_user_id_..'.mp3','[@sordls]','•غنيلي = اغاني عشوائيه اهداء من البوت•','end')
+sendAudio(msg.chat_id_,msg.id_,'./'..msg.sender_user_id_..'.mp3','@sordls','•غنيلي = اغاني عشوائيه اهداء من البوت•','end')
 os.execute('rm -rf ./'..msg.sender_user_id_..'.mp3')
 end
 end
@@ -2692,7 +2692,7 @@ Text = [[
 send(msg.chat_id_, msg.id_,Text)
 return false
 end
-if text == '[@mtgr_dls]' or text == '[@sordls]' or text == 'دلس ' then
+if text == '[@mtgr_dls]' or text == '@sordls' or text == 'دلس ' then
 Text = [[
  مبرمج السورس
 ]]
@@ -2889,7 +2889,7 @@ if k == 1 then
 local GetStart = io.popen('downloadsh '..vv.url):read('*all')
 if GetStart and GetStart:match('(.*)oksend(.*)') then
 print('download Mp3 done ...\nName : '..vv.title..'\nIdLink : '..vv.url)
-sendVoice(msg.chat_id_, msg.id_, 0, 1, nil,'./'..vv.url..'.mp3',vv.title,'- '..vv.title..'\n- [@sordls]','[@sordls]')
+sendVoice(msg.chat_id_, msg.id_, 0, 1, nil,'./'..vv.url..'.mp3',vv.title,'- '..vv.title..'\n- @sordls','@sordls')
 os.execute('rm -rf ./'..vv.url..'.mp3')
 end
 end
@@ -2904,7 +2904,7 @@ if k == 1 then
 local GetStart = io.popen('downloadsh '..vv.url):read('*all')
 if GetStart and GetStart:match('(.*)oksend(.*)') then
 print('download Mp3 done ...\nName : '..vv.title..'\nIdLink : '..vv.url)
-sendAudio(msg.chat_id_,msg.id_,'./'..vv.url..'.mp3',vv.title,'- '..vv.title..'\n- [@sordls]','[@sordls]')
+sendAudio(msg.chat_id_,msg.id_,'./'..vv.url..'.mp3',vv.title,'- '..vv.title..'\n- @sordls','@sordls')
 os.execute('rm -rf ./'..vv.url..'.mp3')
 end
 end
