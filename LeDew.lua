@@ -770,7 +770,7 @@ end
 return false
 end
 if SudoBot(msg) then
-local bl =  '-  Welcome Dew المطور الاساسي \n سورس ديو \n يمكنك تحكم في البوتات من الكيبورد أسفل \n[تابع جديدنا](t.me/sordls) '
+local bl =  '-  Welcome Dew المطور الاساسي \n سورس دلس \n يمكنك تحكم في البوتات من الكيبورد أسفل \n[تابع جديدنا](t.me/sordls) '
 local keyboard = {
     {'•معلومات الكيبورد•'},
       {'•ضع اسم للبوت•'},
@@ -972,7 +972,7 @@ dofile('LeDew.lua')
 end
 if text == 'الاصدار™' and SudoBot(msg) then
 database:del(bot_id..'Srt:Bot')
-send(msg.chat_id_, msg.id_,'اصدار سورس ديو الاول 1')
+send(msg.chat_id_, msg.id_,'اصدار سورس دلس الاول 1')
 end
 if text == '•معلومات الكيبورد•' and SudoBot(msg) then
 database:del(bot_id..'Sart:Bot')
@@ -2661,12 +2661,12 @@ end,nil)
 end
 if text == 'السورس' or text == 'سورس' or text == 'اي سورس' then
 Text = [[
-╭• [Dew Source](t.me/sordls) •╮
+╭• [DLS Source](t.me/sordls) •╮
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
 end
-if text == 'ابي بوت' or text == 'ابي مطور' or text == 'خوش سورس' or text == 'سورس ديو' or text == 'ابي بوت حمايه' or text == 'سورس ديو' then
+if text == 'ابي بوت' or text == 'ابي مطور' or text == 'خوش سورس' or text == 'سورس دلس' or text == 'ابي بوت حمايه' or text == 'سورس دلس' then
 Text = [[
 •- DEV @mtgr_dls مبرمج بوتات•
 ]]
@@ -2675,8 +2675,7 @@ return false
 end
 if text == 'ابي انصب بوت' or text == 'عجبني البوت' or text == 'مين مطور السورس ' or text == 'مين مطور السورس' or text == 'مطور السورس' or text == 'انصبلك'  or text == 'انصبلك بوت' then
 Text = [[
-اهلا عزيزي
-متوفر تنصيب بوتات ع سورس ديو
+اهلا عزيزمتوفر تنصيب بوتات ع سورس دلس
 احدث واسرع البوتات وضمان الثقه
 للاستفسار راسل المطور @mtgr_dls
 ]]
@@ -4703,7 +4702,9 @@ end
 function start_function(extra, result, success)
 database:sadd(bot_id..'Zoag:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\nدز امها فاضي لك انا زواج وما زواج .'
+usertext = '\n[[ > هـلا يعيـوني !
+> مبـروك عليـك الزواج بالعـضو .
+> انقـلعو لأي مكان . ]]'
 local  statuss  = ''
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
@@ -4724,7 +4725,9 @@ end
 function start_function(extra, result, success)
 database:sadd(bot_id..'Mote:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data)
-usertext = '\nطيب يا معفن .'
+usertext = '\n[[ > هـلا يعـيوني !
+> تـم الطـلاق مـن العضـو بنجـاح .
+> يلا دز انـت ويـاها ]]'
 local  statuss  = ''
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
@@ -5774,7 +5777,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'•  𝑾𝒆𝒍𝒄𝒐𝒎𝒆 Dew •\n• لايمكنك استخدام البوت •\n• عليك الاشتراك في القناة •\n• اشترك اولا ['..database:get(bot_id..'add:ch:username')..'•]')
+send(msg.chat_id_, msg.id_,'•  ??𝒆𝒍𝒄𝒐𝒎𝒆 Dew •\n• لايمكنك استخدام البوت •\n• عليك الاشتراك في القناة •\n• اشترك اولا ['..database:get(bot_id..'add:ch:username')..'•]')
 end
 return false
 end
@@ -7847,7 +7850,7 @@ local List = {
 - نقاطڪ يحــلو ⁞ #نقاطك 💘 ٬
 ]],
 [[
-.𖣂 𝙪𝙨𝙚𝙧𝙣𝙖𝙢𝙚 , #يوزرك
+.𖣂 𝙪𝙨𝙚𝙧𝙣𝙖𝙢?? , #يوزرك
 .𖣂 𝙨𝙩𝙖𝙨𝙩 , #رتبتك
 .𖣂 𝙡𝘿 , #ايدي
 .𖣂 𝙂𝙖𝙢𝙨 , #نقاطك
