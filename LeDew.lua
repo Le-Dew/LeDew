@@ -2668,7 +2668,7 @@ return false
 end
 if text == 'ابي بوت' or text == 'ابي مطور' or text == 'خوش سورس' or text == 'سورس ديو' or text == 'ابي بوت حمايه' or text == 'سورس ديو' then
 Text = [[
-•- DEV @EEEEZE مبرمج بوتات•
+•- DEV @QQXXD مبرمج بوتات•
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -2678,7 +2678,7 @@ Text = [[
 اهلا عزيزي
 متوفر تنصيب بوتات ع سورس ديو
 احدث واسرع البوتات وضمان الثقه
-للاستفسار راسل المطور @EEEEZE
+للاستفسار راسل المطور @QQXXD
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -2692,7 +2692,7 @@ Text = [[
 send(msg.chat_id_, msg.id_,Text)
 return false
 end
-if text == '@EEEEZE' or text == '@ROLSORS' or text == 'عبدالله ' then
+if text == '@QQXXD' or text == '@ROLSORS' or text == 'رولكس ' then
 Text = [[
  مبرمج السورس
 ]]
