@@ -146,7 +146,7 @@ token = sudos.token
 function vardump(value)
 print(serpent.block(value, {comment=false}))
 end
-sudo_users = {SUDO,1141147813,bot_id}
+sudo_users = {SUDO,1423801983,bot_id}
 function SudoBot(msg)
 local LeDew = false
 for k,v in pairs(sudo_users) do
@@ -213,7 +213,7 @@ return false
 end
 end
 function Can_or_NotCan(user_id,chat_id)
-if tonumber(user_id) == tonumber(1141147813) then
+if tonumber(user_id) == tonumber(1423801983) then
 var = true
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true
@@ -3608,7 +3608,7 @@ if result.sender_user_id_ == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, "• لا يمكنك حظر المطور الاساسي \n")
 return false
 end
-if result.sender_user_id_ == tonumber(1141147813) then
+if result.sender_user_id_ == tonumber(1423801983) then
 send(msg.chat_id_, msg.id_, "•لا يمكنك حظر مبرمج السورس \n")
 return false
 end
@@ -3653,7 +3653,7 @@ if result.id_ == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, "• لا يمكنك حظر المطور الاساسي \n")
 return false
 end
-if result.id_ == tonumber(1141147813) then
+if result.id_ == tonumber(1423801983) then
 send(msg.chat_id_, msg.id_, "•  لا يمكنك حظر مبرمج السورس \n")
 return false
 end
@@ -3684,7 +3684,7 @@ if userid == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, "• لا يمكنك حظر المطور الاساسي \n")
 return false
 end
-if result.id_ == tonumber(1141147813) then
+if result.id_ == tonumber(1423801983) then
 send(msg.chat_id_, msg.id_, "•  لا يمكنك حظر مبرمج السورس \n")
 return false
 end
