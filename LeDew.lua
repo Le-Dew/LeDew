@@ -48,7 +48,7 @@ end
 os.execute('lua LeDew.lua')
 end
 if not database:get(id_server..":SUDO:USERNAME") then
-io.write('\27[1;35m\n ارسل لي معرف المطور الاساسي ↓ :\n\27[0;33;49m')
+io.write('\27[1;35m\n ارسل لي يوزر المطور الاساسي ↓ :\n\27[0;33;49m')
 local SUDOUSERNAME = io.read():gsub('@','')
 if SUDOUSERNAME ~= '' then
 io.write('\n\27[1;34m تم حفظ معرف المطور :\n\27[0;39;49m')
@@ -429,9 +429,9 @@ end
 function Total_Msg(msgs)
 local LeDew_Msg = ''
 if msgs > 100 then
-LeDew_Msg = 'تفاعلك زفت'
+LeDew_Msg = ' تفاعلك زفت مثل وجهك'
 elseif msgs > 200 then
-LeDew_Msg = 'شوي شدها'
+LeDew_Msg = 'شوي شدها بس مب بزياده'
 elseif msgs > 300 then
 LeDew_Msg = 'شبه متفاعل '
 elseif msgs > 600 then
@@ -465,7 +465,7 @@ if Json_Info.result.status == "creator" then
 send(msg.chat_id_,msg.id_,'\n- المالك')
 return false  end
 if Json_Info.result.status == "member" then
-send(msg.chat_id_,msg.id_,'\n- مجرد عضو هنا ')
+send(msg.chat_id_,msg.id_,'\n- مجرد عضو يالسبك ')
 return false  end
 if Json_Info.result.status == 'left' then
 send(msg.chat_id_,msg.id_,'\n- الشخص غير موجود هنا ')
@@ -1217,7 +1217,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, 
 return false
 end
 if text and text:match("^رفع مطور (%d+)$") and SudoBot(msg) then
-local userid = text:match("^رفع مطور (%d+)$")
+local userid = text:match("^رفع M (%d+)$")
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -1231,7 +1231,7 @@ database:sadd(bot_id..'Sudo:User', userid)
 tdcli_function ({ID = "GetUser",user_id_ = userid},function(arg,data)
 if data.first_name_ then
 usertext = '\n• العضو > ['..data.first_name_..'](t.me/'..(data.username_ or 'DewSc1')..') '
-status  = '\n تم ترقيته مطور في البوت'
+status  = '\n تم ترقيته M في البوت'
 send(msg.chat_id_, msg.id_, usertext..status)
 else
 usertext = '\n• العضو > '..userid..''
@@ -1240,8 +1240,8 @@ send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false
 end
-if text and text:match("^تنزيل مطور @(.*)$") and SudoBot(msg) then
-local username = text:match("^تنزيل مطور @(.*)$")
+if text and text:match("^تنزيل M @(.*)$") and SudoBot(msg) then
+local username = text:match("^تنزيل M @(.*)$")
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -1265,9 +1265,9 @@ end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, nil)
 return false
 end
-if text and text:match("^تنزيل مطور (%d+)$") and SudoBot(msg) then
-local userid = text:match("^تنزيل مطور (%d+)$")
-if AddChannel(msg.sender_user_id_) == false then
+if text and text:match("^تنزيل M (%d+)$") and SudoBot(msg) then
+local userid = text:match("^تنزيل M (%d+)$")
+if AddChannel(msg.sender_user_id_) ==  false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
@@ -1280,11 +1280,11 @@ database:srem(bot_id..'Sudo:User', userid)
 tdcli_function ({ID = "GetUser",user_id_ = userid},function(arg,data)
 if data.first_name_ then
 usertext = '\n•العضو > ['..data.first_name_..'](t.me/'..(data.username_ or 'DewSc1')..')'
-status  = '\n تم تنزيله من المطورين'
+status  = '\n تم تنزيله من قائمة M'
 send(msg.chat_id_, msg.id_, usertext..status)
 else
 usertext = '\n•العضو > '..userid..''
-status  = '\n تم تنزيله من المطورين'
+status  = '\n تم تنزيله من قائمة M'
 send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false
